@@ -6,4 +6,6 @@
 
     <string name="action_settings">Settings</string>
     <string name="thank_you_for_using_units_this_app_was_originally_developed_for_the_programming_assignment_of_cnit_35500_in_purdue_university_but_i_hope_this_app_can_help_those_in_need_of_a_clean_and_light_weight_unit_converter">Thank you for using Units! This app was originally developed for the programming assignment of CNIT 35500 in Purdue University. But I hope this app can help those in need of a clean and light-weight unit converter.</string>
+    <string name="the_mit_license_mit_copyright_c_2016_mark_wen">The MIT License (MIT) Copyright (c) 2016 Mark Wen</string>
+    <string name="icon_of_units">Icon of Units</string>
 </resources>
