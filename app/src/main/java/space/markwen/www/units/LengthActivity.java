@@ -20,7 +20,7 @@ import android.widget.Spinner;
         View lengthView;
         Spinner spinner;
         String[] lengthUnits = {
-            "km", "m", "cm", "mm", "μm", "nm", "mile", "yd", "ft", "inch"
+            "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in"
         };
 
         @Nullable

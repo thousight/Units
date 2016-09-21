@@ -46,195 +46,212 @@
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" km"
+                        android:text=" kilometers"
                         android:textSize="20sp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:background="@color/lightGray">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="viewStart"
                         android:layout_weight="1"
-                        android:text=" m"
+                        android:text=" meters"
                         android:textSize="20sp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" cm"
+                        android:text=" centimeters"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:background="@color/lightGray">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" mm"
+                        android:text=" millimeters"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" μm"
+                        android:text=" micrometers"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:background="@color/lightGray">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" nm"
+                        android:text=" nanometers"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" Mi"
+                        android:text=" miles"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:background="@color/lightGray">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" yd"
+                        android:text=" yards"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" ft"
+                        android:text=" feet"
                         android:textSize="20sp"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
                     android:layout_marginBottom="25dp"
-                    android:weightSum="2">
+                    android:weightSum="2"
+                    android:background="@color/lightGray">
+
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:textAlignment="textEnd"
                         android:text="Text"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" inches"
