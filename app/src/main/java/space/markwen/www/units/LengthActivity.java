@@ -19,7 +19,9 @@ public class LengthActivity extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Change FrameLayout to content_length
         lengthView = inflater.inflate(R.layout.content_length, container, false);
+        // Change the title on titlebar to Length
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Length");
         return lengthView;
     }

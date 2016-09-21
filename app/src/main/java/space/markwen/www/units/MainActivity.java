@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        // Show content_length at start
         android.app.FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.content_frame, new LengthActivity())
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        // Handle navigation view item clicks
         int id = item.getItemId();
 
         android.app.FragmentManager fragmentManager = getFragmentManager();
@@ -64,9 +65,9 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new TemperatureActivity())
                     .commit();
-        } else if (id == R.id.nav_help) {
+        } else if (id == R.id.nav_about) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new HelpActivity())
+                    .replace(R.id.content_frame, new AboutActivity())
                     .commit();
         }
 

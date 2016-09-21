@@ -12,15 +12,17 @@ import android.view.ViewGroup;
  * Created by markw on 9/20/2016.
  */
 
-public class HelpActivity extends Fragment {
+public class AboutActivity extends Fragment {
 
     View helpView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        helpView = inflater.inflate(R.layout.content_help, container, false);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Help");
+        // Change FrameLayout to content_about
+        helpView = inflater.inflate(R.layout.content_about, container, false);
+        // Change the title on titlebar to About
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("About");
         return helpView;
     }
 

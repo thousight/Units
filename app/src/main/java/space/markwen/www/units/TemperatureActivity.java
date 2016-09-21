@@ -19,7 +19,9 @@ public class TemperatureActivity extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Change FrameLayout to content_temperature
         temperatureView = inflater.inflate(R.layout.content_temperature, container, false);
+        // Change the title on titlebar to Temperature
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Temperature");
         return temperatureView;
     }

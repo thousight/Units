@@ -19,7 +19,9 @@ public class WeightActivity extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Change FrameLayout to content_weight
         weightView = inflater.inflate(R.layout.content_weight, container, false);
+        // Change the title on titlebar to Weight
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Weight");
         return weightView;
     }
