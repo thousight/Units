@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:weightSum="1">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:weightSum="1"
+        tools:ignore="ExtraText">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:ems="10"
-        android:gravity="right"
-        android:id="@+id/editText"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="30dp"
-        android:layout_weight="1.01" />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:gravity="end"
+            android:id="@+id/editText"
+            android:textSize="30sp"
+            android:layout_weight="1.01"
+            tools:ignore="InefficientWeight" />
 
-    <Spinner
-        android:layout_width="112dp"
-        android:layout_height="57dp"
-        android:id="@+id/lengthSpinner" />
-    <!--android:layout_below="@+id/editText"-->
+        <Spinner
+            android:layout_width="112dp"
+            android:layout_height="57dp"
+            android:id="@+id/lengthSpinner" />
+        <!--android:layout_below="@+id/editText"-->
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="42dp" />
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
