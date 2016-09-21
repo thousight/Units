@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Length"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:id="@+id/textView1"
-        android:layout_marginTop="17dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:gravity="right"
+        android:id="@+id/editText"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp" />
-</RelativeLayout>
+        android:textSize="30dp"
+        android:layout_weight="1.01" />
+
+    <Spinner
+        android:layout_width="112dp"
+        android:layout_height="57dp"
+        android:id="@+id/lengthSpinner" />
+    <!--android:layout_below="@+id/editText"-->
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+</LinearLayout>
