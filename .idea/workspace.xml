@@ -30,10 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a0d9be-efa2-4b2b-99ec-602c5c04480c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" />
     </list>
     <ignored path="Units.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,8 +81,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="38">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -92,9 +91,13 @@
       <file leaf-file-name="LengthActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            <state relative-caret-position="1072">
+              <caret line="89" column="51" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
               <folding>
+                <element signature="method#beforeTextChanged#0;class#2320:2839" expanded="false" />
+                <element signature="method#onTextChanged#0;class#2320:2839" expanded="false" />
+                <element signature="method#onNothingSelected#0;class#3269:3794" expanded="false" />
+                <element signature="method#convertInput#0;class#LengthActivity#0" expanded="false" />
                 <element signature="method#numberFormatter#0;class#LengthActivity#0" expanded="false" />
                 <element signature="method#outputBasedOnText#0;class#LengthActivity#0" expanded="false" />
               </folding>
@@ -1769,9 +1772,9 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_about.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
       </list>
     </option>
   </component>
@@ -1910,6 +1913,7 @@
     <property name="SearchEverywhereHistoryKey" value="androidmani&#9;FILE&#9;file://C:/Users/markw/OneDrive/Documents/GitHub/Units/app/src/main/AndroidManifest.xml&#10;content_main&#9;PSI&#9;JAVA://space.markwen.www.units.R.layout#content_main&#10;&lt;item&#9;null&#9;null&#10;colorprimarydark&#9;PSI&#9;JAVA://android.support.design.R.styleable#AppCompatTheme_colorPrimaryDark&#10;colorPrimaryDark&#9;PSI&#9;JAVA://space.markwen.www.units.R.color#colorPrimaryDark&#10;ColorPrimaryDark&#9;PSI&#9;JAVA://android.support.design.R.attr#colorPrimaryDark" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="VectorAssetImportPath" value="C:\Users\markw\Downloads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CNIT355/Lab4Mission4" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -2391,6 +2395,10 @@
         <state relative-caret-position="440">
           <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
           <folding>
+            <element signature="method#beforeTextChanged#0;class#2320:2839" expanded="false" />
+            <element signature="method#onTextChanged#0;class#2320:2839" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3269:3794" expanded="false" />
+            <element signature="method#convertInput#0;class#LengthActivity#0" expanded="false" />
             <element signature="method#numberFormatter#0;class#LengthActivity#0" expanded="false" />
             <element signature="method#outputBasedOnText#0;class#LengthActivity#0" expanded="false" />
           </folding>
@@ -2759,6 +2767,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -2772,25 +2788,21 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="21" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="38">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        <state relative-caret-position="1072">
+          <caret line="89" column="51" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
           <folding>
+            <element signature="method#beforeTextChanged#0;class#2320:2839" expanded="false" />
+            <element signature="method#onTextChanged#0;class#2320:2839" expanded="false" />
+            <element signature="method#onNothingSelected#0;class#3269:3794" expanded="false" />
+            <element signature="method#convertInput#0;class#LengthActivity#0" expanded="false" />
             <element signature="method#numberFormatter#0;class#LengthActivity#0" expanded="false" />
             <element signature="method#outputBasedOnText#0;class#LengthActivity#0" expanded="false" />
           </folding>

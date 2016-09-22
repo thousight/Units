@@ -106,6 +106,17 @@ import static space.markwen.www.units.R.id.ydText;
 
         // Method that converts all the units and display them
         private void convertInput(double input) {
+            kmTextView = (TextView) lengthView.findViewById(kmText);
+            mTextView = (TextView) lengthView.findViewById(mText);
+            cmTextView = (TextView) lengthView.findViewById(cmText);
+            mmTextView = (TextView) lengthView.findViewById(mmText);
+            umTextView = (TextView) lengthView.findViewById(umText);
+            nmTextView = (TextView) lengthView.findViewById(nmText);
+            miTextView = (TextView) lengthView.findViewById(miText);
+            ydTextView = (TextView) lengthView.findViewById(ydText);
+            ftTextView = (TextView) lengthView.findViewById(ftText);
+            inTextView = (TextView) lengthView.findViewById(inText);
+
             if (input != 0) {
                 // Set standard value in meters based on selected unit
                 switch (selectedUnit) {
@@ -144,65 +155,45 @@ import static space.markwen.www.units.R.id.ydText;
                         break;
                 }
                 //km
-                kmTextView = (TextView) lengthView.findViewById(kmText);
                 kmTextView.setText(numberFormatter(standard * 0.001));
                 //m
-                mTextView = (TextView) lengthView.findViewById(mText);
                 mTextView.setText(numberFormatter(standard * 1));
                 //cm
-                cmTextView = (TextView) lengthView.findViewById(cmText);
                 cmTextView.setText(numberFormatter(standard * 100));
                 //mm
-                mmTextView = (TextView) lengthView.findViewById(mmText);
                 mmTextView.setText(numberFormatter(standard * 1000));
                 //um
-                umTextView = (TextView) lengthView.findViewById(umText);
                 umTextView.setText(numberFormatter(standard * 1000000));
                 //nm
-                nmTextView = (TextView) lengthView.findViewById(nmText);
                 nmTextView.setText(numberFormatter(standard * 1000000000));
                 //mi
-                miTextView = (TextView) lengthView.findViewById(miText);
                 miTextView.setText(numberFormatter(standard * 0.000621371));
                 //yd
-                ydTextView = (TextView) lengthView.findViewById(ydText);
                 ydTextView.setText(numberFormatter(standard * 1.09361));
                 //ft
-                ftTextView = (TextView) lengthView.findViewById(ftText);
                 ftTextView.setText(numberFormatter(standard * 3.28084));
                 //in
-                inTextView = (TextView) lengthView.findViewById(inText);
                 inTextView.setText(numberFormatter(standard * 39.3701));
             } else {
                 //km
-                kmTextView = (TextView) lengthView.findViewById(kmText);
                 kmTextView.setText("");
                 //m
-                mTextView = (TextView) lengthView.findViewById(mText);
                 mTextView.setText("");
                 //cm
-                cmTextView = (TextView) lengthView.findViewById(cmText);
                 cmTextView.setText("");
                 //mm
-                mmTextView = (TextView) lengthView.findViewById(mmText);
                 mmTextView.setText("");
                 //um
-                umTextView = (TextView) lengthView.findViewById(umText);
                 umTextView.setText("");
                 //nm
-                nmTextView = (TextView) lengthView.findViewById(nmText);
                 nmTextView.setText("");
                 //mi
-                miTextView = (TextView) lengthView.findViewById(miText);
                 miTextView.setText("");
                 //yd
-                ydTextView = (TextView) lengthView.findViewById(ydText);
                 ydTextView.setText("");
                 //ft
-                ftTextView = (TextView) lengthView.findViewById(ftText);
                 ftTextView.setText("");
                 //in
-                inTextView = (TextView) lengthView.findViewById(inText);
                 inTextView.setText("");
             }
         }
@@ -215,10 +206,10 @@ import static space.markwen.www.units.R.id.ydText;
 
             // If input is in scientific notation already
             if ((String.valueOf(input)).indexOf("E") > 0) {
-                String a = sciFormatter.format(input);
-                return sciFormatter.format(input);
+                return sciFormatter.format(input); // make the scientific notation neater
             }
 
+            // If input is not in scientific notation
             // Number of digits of integer and decimal of input
             String[] splitter = String.format("%f", input).split("\\.");
             int intDigits = splitter[0].length();   // Before Decimal Count
