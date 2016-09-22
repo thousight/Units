@@ -16,7 +16,7 @@
                 android:inputType="numberDecimal"
                 android:ems="10"
                 android:gravity="end"
-                android:id="@+id/editText"
+                android:id="@+id/lengthEditText"
                 android:textSize="30sp"
                 android:layout_weight="1.01"
                 tools:ignore="InefficientWeight" />
@@ -49,7 +49,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/kmText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -71,7 +71,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/mText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -92,7 +92,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/cmText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -114,7 +114,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/mmText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -135,7 +135,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/umText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -157,7 +157,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/nmText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -178,7 +178,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/miText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -200,7 +200,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/ydText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -221,7 +221,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/ftText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -245,7 +245,7 @@
                         android:layout_height="40dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:text="Text"
+                        android:id="@+id/inText"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
