@@ -51,7 +51,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/kmText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -75,7 +75,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/mText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -98,7 +98,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/cmText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -122,7 +122,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/mmText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -145,7 +145,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/umText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -169,7 +169,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/nmText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -192,7 +192,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/miText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -216,7 +216,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/ydText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -239,7 +239,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/ftText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView
@@ -265,7 +265,7 @@
                         android:textAlignment="textEnd"
                         android:id="@+id/inText"
                         android:maxLines="1"
-                        android:maxLength="12"
+                        android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="20sp"/>
                     <TextView

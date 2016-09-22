@@ -200,11 +200,16 @@ import static space.markwen.www.units.R.id.ydText;
             NumberFormat sciFormatter = new DecimalFormat("0.#####E0"); // Scientific notation
             NumberFormat commaFormatter = new DecimalFormat("###,###,###,###.####"); // Adding comma
             // Number of digits of integer and decimal of input
-            String[] splitter = Double.toString(input).split("\\.");
+            String[] splitter = String.format("%.4f", input).split("\\.");
             int intDigits = splitter[0].length();   // Before Decimal Count
-            int decDigits = splitter[1].length();   // After  Decimal Count
+            int decDigits;// After  Decimal Count
+            if (splitter[1].equals("0000")){
+                decDigits = 0;
+            } else {
+                decDigits= splitter[1].length();
+            }
 
-            if ((intDigits + decDigits) >= 12) {
+            if ((intDigits + decDigits) > 9) {
                 return sciFormatter.format(input);
             }
             return commaFormatter.format(input);
