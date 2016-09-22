@@ -15,6 +15,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 import static space.markwen.www.units.R.id.cmText;
 import static space.markwen.www.units.R.id.ftText;
 import static space.markwen.www.units.R.id.inText;
@@ -66,13 +69,12 @@ import static space.markwen.www.units.R.id.ydText;
                 public void afterTextChanged(Editable s) {
                     // Values change as textbox input changes
                     String stringValue = s.toString();
-                    double input;
-                    if (stringValue.length() == 0) {
-                        input = 0.000000;
+                    if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
+                        convertInput(0);
                     } else {
-                        input = Double.parseDouble(stringValue);
+                        convertInput(Double.parseDouble(stringValue));
                     }
-                    convertInput(input);
+
                 }
             });
 
@@ -87,13 +89,12 @@ import static space.markwen.www.units.R.id.ydText;
                     selectedUnit = lengthUnits[position];
                     // Make sure values refreshes when spinner value changes
                     String stringValue = textbox.getText().toString();
-                    double input;
-                    if (stringValue.length() == 0) {
-                        input = 0.000000;
+                    if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) {
+                        convertInput(0);
                     } else {
-                        input = Double.parseDouble(stringValue);
+                        convertInput(Double.parseDouble(stringValue));
                     }
-                    convertInput(input);
+
                 }
 
                 @Override
@@ -105,70 +106,119 @@ import static space.markwen.www.units.R.id.ydText;
             return lengthView;
         }
 
+        // Method that converts all the units and display them
         private void convertInput(double input) {
-            // Set standard value in meters based on selected unit
-            switch (selectedUnit) {
-                case "km":
-                    standard = input / 0.001;
-                    break;
-                case "cm":
-                    standard = input / 100;
-                    break;
-                case "mm":
-                    standard = input / 1000;
-                    break;
-                case "um":
-                    standard = input / 1000000;
-                    break;
-                case "nm":
-                    standard = input / 1000000000;
-                    break;
-                case "mi":
-                    standard = input / 0.000621371;
-                    break;
-                case "yd":
-                    standard = input / 1.09361;
-                    break;
-                case "ft":
-                    standard = input / 3.28084;
-                    break;
-                case "in":
-                    standard = input / 39.3701;
-                    break;
-                default:
-                    standard = input;
-                    break;
+            if (input != 0) {
+                // Set standard value in meters based on selected unit
+                switch (selectedUnit) {
+                    case "km":
+                        standard = input / 0.001;
+                        break;
+                    case "cm":
+                        standard = input / 100;
+                        break;
+                    case "mm":
+                        standard = input / 1000;
+                        break;
+                    case "um":
+                        standard = input / 1000000;
+                        break;
+                    case "nm":
+                        standard = input / 1000000000;
+                        break;
+                    case "mi":
+                        standard = input / 0.000621371;
+                        break;
+                    case "yd":
+                        standard = input / 1.09361;
+                        break;
+                    case "ft":
+                        standard = input / 3.28084;
+                        break;
+                    case "in":
+                        standard = input / 39.3701;
+                        break;
+                    default:
+                        standard = input;
+                        break;
+                }
+                //km
+                TextView kmTextView = (TextView) lengthView.findViewById(kmText);
+                kmTextView.setText(numberFormatter(standard * 0.001));
+                //m
+                TextView mTextView = (TextView) lengthView.findViewById(mText);
+                mTextView.setText(numberFormatter(standard * 1));
+                //cm
+                TextView cmTextView = (TextView) lengthView.findViewById(cmText);
+                cmTextView.setText(numberFormatter(standard * 100));
+                //mm
+                TextView mmTextView = (TextView) lengthView.findViewById(mmText);
+                mmTextView.setText(numberFormatter(standard * 1000));
+                //um
+                TextView umTextView = (TextView) lengthView.findViewById(umText);
+                umTextView.setText(numberFormatter(standard * 1000000));
+                //nm
+                TextView nmTextView = (TextView) lengthView.findViewById(nmText);
+                nmTextView.setText(numberFormatter(standard * 1000000000));
+                //mi
+                TextView miTextView = (TextView) lengthView.findViewById(miText);
+                miTextView.setText(numberFormatter(standard * 0.000621371));
+                //yd
+                TextView ydTextView = (TextView) lengthView.findViewById(ydText);
+                ydTextView.setText(numberFormatter(standard * 1.09361));
+                //ft
+                TextView ftTextView = (TextView) lengthView.findViewById(ftText);
+                ftTextView.setText(numberFormatter(standard * 3.28084));
+                //in
+                TextView inTextView = (TextView) lengthView.findViewById(inText);
+                inTextView.setText(numberFormatter(standard * 39.3701));
+            } else {
+                //km
+                TextView kmTextView = (TextView) lengthView.findViewById(kmText);
+                kmTextView.setText("");
+                //m
+                TextView mTextView = (TextView) lengthView.findViewById(mText);
+                mTextView.setText("");
+                //cm
+                TextView cmTextView = (TextView) lengthView.findViewById(cmText);
+                cmTextView.setText("");
+                //mm
+                TextView mmTextView = (TextView) lengthView.findViewById(mmText);
+                mmTextView.setText("");
+                //um
+                TextView umTextView = (TextView) lengthView.findViewById(umText);
+                umTextView.setText("");
+                //nm
+                TextView nmTextView = (TextView) lengthView.findViewById(nmText);
+                nmTextView.setText("");
+                //mi
+                TextView miTextView = (TextView) lengthView.findViewById(miText);
+                miTextView.setText("");
+                //yd
+                TextView ydTextView = (TextView) lengthView.findViewById(ydText);
+                ydTextView.setText("");
+                //ft
+                TextView ftTextView = (TextView) lengthView.findViewById(ftText);
+                ftTextView.setText("");
+                //in
+                TextView inTextView = (TextView) lengthView.findViewById(inText);
+                inTextView.setText("");
             }
-            //km
-            TextView kmTextView = (TextView) lengthView.findViewById(kmText);
-            kmTextView.setText(String.format("%.6f", (standard * 0.001)));
-            //m
-            TextView mTextView = (TextView) lengthView.findViewById(mText);
-            mTextView.setText(String.format("%.6f", (standard * 1)));
-            //cm
-            TextView cmTextView = (TextView) lengthView.findViewById(cmText);
-            cmTextView.setText(String.format("%.6f", (standard * 100)));
-            //mm
-            TextView mmTextView = (TextView) lengthView.findViewById(mmText);
-            mmTextView.setText(String.format("%.6f", (standard * 1000)));
-            //um
-            TextView umTextView = (TextView) lengthView.findViewById(umText);
-            umTextView.setText(String.format("%.6f", (standard * 1000000)));
-            //nm
-            TextView nmTextView = (TextView) lengthView.findViewById(nmText);
-            nmTextView.setText(String.format("%.6f", (standard * 1000000000)));
-            //mi
-            TextView miTextView = (TextView) lengthView.findViewById(miText);
-            miTextView.setText(String.format("%.6f", (standard * 0.000621371)));
-            //yd
-            TextView ydTextView = (TextView) lengthView.findViewById(ydText);
-            ydTextView.setText(String.format("%.6f", (standard * 1.09361)));
-            //ft
-            TextView ftTextView = (TextView) lengthView.findViewById(ftText);
-            ftTextView.setText(String.format("%.6f", (standard * 3.28084)));
-            //in
-            TextView inTextView = (TextView) lengthView.findViewById(inText);
-            inTextView.setText(String.format("%.6f", (standard * 39.3701)));
         }
 
+        // Method that formats the converted numbers
+        private String numberFormatter(double input) {
+            // Formatters
+            NumberFormat sciFormatter = new DecimalFormat("0.#####E0"); // Scientific notation
+            NumberFormat commaFormatter = new DecimalFormat("###,###,###,###.####"); // Adding comma
+            // Number of digits of integer and decimal of input
+            String[] splitter = Double.toString(input).split("\\.");
+            int intDigits = splitter[0].length();   // Before Decimal Count
+            int decDigits = splitter[1].length();   // After  Decimal Count
+
+            if ((intDigits + decDigits) >= 12) {
+                return sciFormatter.format(input);
+            }
+            return commaFormatter.format(input);
+        }
     }
