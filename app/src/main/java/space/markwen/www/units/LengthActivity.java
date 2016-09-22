@@ -198,12 +198,19 @@ import static space.markwen.www.units.R.id.ydText;
         private String numberFormatter(double input) {
             // Formatters
             NumberFormat sciFormatter = new DecimalFormat("0.#####E0"); // Scientific notation
-            NumberFormat commaFormatter = new DecimalFormat("###,###,###,###.####"); // Adding comma
+            NumberFormat commaFormatter = new DecimalFormat("###,###,###,###.###############"); // Adding comma
+
+            // If input is in scientific notation already
+            if ((String.valueOf(input)).indexOf("E") > 0) {
+                String a = sciFormatter.format(input);
+                return sciFormatter.format(input);
+            }
+
             // Number of digits of integer and decimal of input
-            String[] splitter = String.format("%.4f", input).split("\\.");
+            String[] splitter = String.format("%f", input).split("\\.");
             int intDigits = splitter[0].length();   // Before Decimal Count
             int decDigits;// After  Decimal Count
-            if (splitter[1].equals("0000")){
+            if (splitter[1].equals("000000")){
                 decDigits = 0;
             } else {
                 decDigits= splitter[1].length();
@@ -218,12 +225,8 @@ import static space.markwen.www.units.R.id.ydText;
         // Method that determines numbers that displays based on user input
         private void outputBasedOnText(Editable s) {
             String stringValue = s.toString();
-            if (stringValue.length() > 0){
-                if (stringValue.substring(stringValue.length() - 1).equals(".")) {
-                    convertInput(Double.parseDouble(stringValue.substring(0, stringValue.length() - 1)));
-                } else {
-                    convertInput(Double.parseDouble(stringValue));
-                }
+            if (stringValue.length() > 1 && stringValue.substring(stringValue.length() - 1).equals(".")) { // If the last char in string is "."
+                convertInput(Double.parseDouble(stringValue.substring(0, stringValue.length() - 1)));
             } else if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
                 convertInput(0);
             } else {
