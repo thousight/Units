@@ -102,6 +102,9 @@ import static space.markwen.www.units.R.id.ydText;
                     case "km":
                         standard = input / 0.001;
                         break;
+                    case "m":
+                        standard = input;
+                        break;
                     case "cm":
                         standard = input / 100;
                         break;
