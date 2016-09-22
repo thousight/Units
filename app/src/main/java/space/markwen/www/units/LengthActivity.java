@@ -23,16 +23,17 @@ import android.widget.TextView;
 
         View lengthView;
         Spinner spinner;
-        String[] lengthUnits = {
-            "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in"
-        };
+        String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
         EditText textbox;
 
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
             // Change FrameLayout to content_length
             lengthView = inflater.inflate(R.layout.content_length, container, false);
+            // Change the title on titlebar to Length
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Length");
 
             // Textbox handler
             textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
@@ -104,16 +105,11 @@ import android.widget.TextView;
 
                 }
             });
-            ArrayAdapter<String> adapter = new ArrayAdapter<String> (getActivity(), android.R.layout.simple_spinner_item, lengthUnits);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, lengthUnits);
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner.setAdapter(adapter);
 
-            // Change the title on titlebar to Length
-            ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Length");
-
             return lengthView;
         }
-
-
 
     }
