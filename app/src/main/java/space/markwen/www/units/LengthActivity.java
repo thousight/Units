@@ -108,7 +108,7 @@ import static space.markwen.www.units.R.id.ydText;
                     case "mm":
                         standard = input / 1000;
                         break;
-                    case "um":
+                    case "μm":
                         standard = input / 1000000;
                         break;
                     case "nm":
