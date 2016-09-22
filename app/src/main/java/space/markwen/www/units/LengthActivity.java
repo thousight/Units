@@ -69,7 +69,9 @@ import static space.markwen.www.units.R.id.ydText;
                 public void afterTextChanged(Editable s) {
                     // Values change as textbox input changes
                     String stringValue = s.toString();
-                    if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
+                    if (stringValue.substring(stringValue.length() - 1).equals(".")){
+                        convertInput(Double.parseDouble(stringValue.substring(0, stringValue.length() - 1)));
+                    } else if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
                         convertInput(0);
                     } else {
                         convertInput(Double.parseDouble(stringValue));
