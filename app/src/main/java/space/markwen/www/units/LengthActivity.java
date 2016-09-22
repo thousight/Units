@@ -68,19 +68,7 @@ import static space.markwen.www.units.R.id.ydText;
                 @Override
                 public void afterTextChanged(Editable s) {
                     // Values change as textbox input changes
-                    String stringValue = s.toString();
-                    if (stringValue.length() > 0){
-                        if (stringValue.substring(stringValue.length() - 1).equals(".")) {
-                            convertInput(Double.parseDouble(stringValue.substring(0, stringValue.length() - 1)));
-                        } else {
-                            convertInput(Double.parseDouble(stringValue));
-                        }
-                    } else if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
-                        convertInput(0);
-                    } else {
-                        convertInput(Double.parseDouble(stringValue));
-                    }
-
+                    outputBasedOnText(s);
                 }
             });
 
@@ -94,13 +82,7 @@ import static space.markwen.www.units.R.id.ydText;
                                            int position, long id) {
                     selectedUnit = lengthUnits[position];
                     // Make sure values refreshes when spinner value changes
-                    String stringValue = textbox.getText().toString();
-                    if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) {
-                        convertInput(0);
-                    } else {
-                        convertInput(Double.parseDouble(stringValue));
-                    }
-
+                    outputBasedOnText(textbox.getText());
                 }
 
                 @Override
@@ -226,5 +208,21 @@ import static space.markwen.www.units.R.id.ydText;
                 return sciFormatter.format(input);
             }
             return commaFormatter.format(input);
+        }
+
+        // Method that determines numbers that displays based on user input
+        private void outputBasedOnText(Editable s) {
+            String stringValue = s.toString();
+            if (stringValue.length() > 0){
+                if (stringValue.substring(stringValue.length() - 1).equals(".")) {
+                    convertInput(Double.parseDouble(stringValue.substring(0, stringValue.length() - 1)));
+                } else {
+                    convertInput(Double.parseDouble(stringValue));
+                }
+            } else if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
+                convertInput(0);
+            } else {
+                convertInput(Double.parseDouble(stringValue));
+            }
         }
     }
