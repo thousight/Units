@@ -41,7 +41,17 @@ import static space.markwen.www.units.R.id.ydText;
         double standard = 1.000000; // convert input into meters
         String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
         EditText textbox;
-        String textboxText = null;
+
+        TextView kmTextView;
+        TextView mTextView;
+        TextView cmTextView;
+        TextView mmTextView;
+        TextView umTextView;
+        TextView nmTextView;
+        TextView miTextView;
+        TextView ydTextView;
+        TextView ftTextView;
+        TextView inTextView;
 
         @Nullable
         @Override
@@ -134,65 +144,65 @@ import static space.markwen.www.units.R.id.ydText;
                         break;
                 }
                 //km
-                TextView kmTextView = (TextView) lengthView.findViewById(kmText);
+                kmTextView = (TextView) lengthView.findViewById(kmText);
                 kmTextView.setText(numberFormatter(standard * 0.001));
                 //m
-                TextView mTextView = (TextView) lengthView.findViewById(mText);
+                mTextView = (TextView) lengthView.findViewById(mText);
                 mTextView.setText(numberFormatter(standard * 1));
                 //cm
-                TextView cmTextView = (TextView) lengthView.findViewById(cmText);
+                cmTextView = (TextView) lengthView.findViewById(cmText);
                 cmTextView.setText(numberFormatter(standard * 100));
                 //mm
-                TextView mmTextView = (TextView) lengthView.findViewById(mmText);
+                mmTextView = (TextView) lengthView.findViewById(mmText);
                 mmTextView.setText(numberFormatter(standard * 1000));
                 //um
-                TextView umTextView = (TextView) lengthView.findViewById(umText);
+                umTextView = (TextView) lengthView.findViewById(umText);
                 umTextView.setText(numberFormatter(standard * 1000000));
                 //nm
-                TextView nmTextView = (TextView) lengthView.findViewById(nmText);
+                nmTextView = (TextView) lengthView.findViewById(nmText);
                 nmTextView.setText(numberFormatter(standard * 1000000000));
                 //mi
-                TextView miTextView = (TextView) lengthView.findViewById(miText);
+                miTextView = (TextView) lengthView.findViewById(miText);
                 miTextView.setText(numberFormatter(standard * 0.000621371));
                 //yd
-                TextView ydTextView = (TextView) lengthView.findViewById(ydText);
+                ydTextView = (TextView) lengthView.findViewById(ydText);
                 ydTextView.setText(numberFormatter(standard * 1.09361));
                 //ft
-                TextView ftTextView = (TextView) lengthView.findViewById(ftText);
+                ftTextView = (TextView) lengthView.findViewById(ftText);
                 ftTextView.setText(numberFormatter(standard * 3.28084));
                 //in
-                TextView inTextView = (TextView) lengthView.findViewById(inText);
+                inTextView = (TextView) lengthView.findViewById(inText);
                 inTextView.setText(numberFormatter(standard * 39.3701));
             } else {
                 //km
-                TextView kmTextView = (TextView) lengthView.findViewById(kmText);
+                kmTextView = (TextView) lengthView.findViewById(kmText);
                 kmTextView.setText("");
                 //m
-                TextView mTextView = (TextView) lengthView.findViewById(mText);
+                mTextView = (TextView) lengthView.findViewById(mText);
                 mTextView.setText("");
                 //cm
-                TextView cmTextView = (TextView) lengthView.findViewById(cmText);
+                cmTextView = (TextView) lengthView.findViewById(cmText);
                 cmTextView.setText("");
                 //mm
-                TextView mmTextView = (TextView) lengthView.findViewById(mmText);
+                mmTextView = (TextView) lengthView.findViewById(mmText);
                 mmTextView.setText("");
                 //um
-                TextView umTextView = (TextView) lengthView.findViewById(umText);
+                umTextView = (TextView) lengthView.findViewById(umText);
                 umTextView.setText("");
                 //nm
-                TextView nmTextView = (TextView) lengthView.findViewById(nmText);
+                nmTextView = (TextView) lengthView.findViewById(nmText);
                 nmTextView.setText("");
                 //mi
-                TextView miTextView = (TextView) lengthView.findViewById(miText);
+                miTextView = (TextView) lengthView.findViewById(miText);
                 miTextView.setText("");
                 //yd
-                TextView ydTextView = (TextView) lengthView.findViewById(ydText);
+                ydTextView = (TextView) lengthView.findViewById(ydText);
                 ydTextView.setText("");
                 //ft
-                TextView ftTextView = (TextView) lengthView.findViewById(ftText);
+                ftTextView = (TextView) lengthView.findViewById(ftText);
                 ftTextView.setText("");
                 //in
-                TextView inTextView = (TextView) lengthView.findViewById(inText);
+                inTextView = (TextView) lengthView.findViewById(inText);
                 inTextView.setText("");
             }
         }
