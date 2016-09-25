@@ -1,35 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        tools:ignore="ExtraText"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/input_card"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/lengthEditText"
+                    android:textSize="30sp"
+                    android:layout_weight="1.01"
+                    tools:ignore="InefficientWeight"
+                    android:gravity="end" />
+
+                <Spinner
+                    android:layout_width="112dp"
+                    android:layout_height="57dp"
+                    android:id="@+id/lengthSpinner" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/result_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        xmlns:android="http://schemas.android.com/apk/res/android">
-
-        <LinearLayout
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:weightSum="1"
-            tools:ignore="ExtraText">
-
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"
-                android:ems="10"
-                android:gravity="end"
-                android:id="@+id/lengthEditText"
-                android:textSize="30sp"
-                android:layout_weight="1.01"
-                tools:ignore="InefficientWeight" />
-
-            <Spinner
-                android:layout_width="112dp"
-                android:layout_height="57dp"
-                android:id="@+id/lengthSpinner" />
-        </LinearLayout>
+        card_view:cardCornerRadius="2dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,7 +84,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
@@ -57,7 +102,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" kilometers"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -81,7 +127,8 @@
                         android:textAlignment="viewStart"
                         android:layout_weight="1"
                         android:text=" meters"
-                        android:textSize="20sp" />
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -104,7 +151,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" centimeters"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -128,7 +176,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" millimeters"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -151,7 +200,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" micrometers"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -175,7 +225,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" nanometers"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -198,7 +249,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" miles"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -222,7 +274,8 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" yards"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -245,12 +298,13 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" feet"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginBottom="8dp"
                     android:weightSum="2"
                     android:background="@color/lightGray">
 
@@ -271,8 +325,12 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" inches"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
-    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
