@@ -6,6 +6,7 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--Top colored area-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -14,6 +15,7 @@
         tools:ignore="ExtraText"
         xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
+        <!--Top input card-->
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/input_card"
@@ -54,6 +56,7 @@
 
     </LinearLayout>
 
+    <!--Card consisting the list of results-->
     <android.support.v7.widget.CardView
         android:id="@+id/result_card"
         android:layout_width="match_parent"
@@ -70,16 +73,15 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -87,245 +89,297 @@
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/kmText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" kilometers"
                         android:textSize="20sp"
-                        tools:ignore="HardcodedText" />
+                        tools:ignore="HardcodedText"
+                        android:textColor="@color/textColor" />
                 </LinearLayout>
+                <!--Horizontal divider line-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="2"
-                    android:background="@color/lightGray">
+                    android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/mText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="viewStart"
                         android:layout_weight="1"
                         android:text=" meters"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/cmText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" centimeters"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="2"
-                    android:background="@color/lightGray">
+                    android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/mmText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" millimeters"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/umText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" micrometers"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="2"
-                    android:background="@color/lightGray">
+                    android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/nmText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" nanometers"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/miText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" miles"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
-                <LinearLayout
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2"
-                    android:background="@color/lightGray">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:gravity="center"
-                        android:textAlignment="textEnd"
-                        android:id="@+id/ydText"
-                        android:maxLines="1"
-                        android:maxLength="14"
-                        android:layout_weight="1"
-                        android:textSize="20sp"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="40dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:textAlignment="viewStart"
-                        android:text=" yards"
-                        android:textSize="20sp"
-                        tools:ignore="HardcodedText" />
-                </LinearLayout>
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="2">
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/ydText"
+                        android:maxLines="1"
+                        android:maxLength="14"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:text=" yards"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/ftText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" feet"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:weightSum="2"
-                    android:background="@color/lightGray">
+                    android:weightSum="2">
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
                         android:id="@+id/inText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"/>
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
+
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_height="40dp"
+                        android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" inches"
                         android:textSize="20sp"
+                        android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
             </LinearLayout>
