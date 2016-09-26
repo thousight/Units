@@ -7,7 +7,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -47,7 +46,6 @@ import static space.markwen.www.units.R.id.ydText;
         String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
         EditText textbox;
         AppCompatActivity activity;
-        Toolbar toolbar;
         LinearLayout colorBoard;
 
         TextView kmTextView;

@@ -6,7 +6,6 @@
         <item name="colorPrimary">#333333</item>
         <item name="colorPrimaryDark">#212121</item>
         <item name="colorAccent">#1EC7AC</item>
-        <item name="android:textAppearanceListItemSmall">@style/CustomSpinnerStyle</item>
     </style>
 
     <style name="LengthTheme.NoActionBar">
