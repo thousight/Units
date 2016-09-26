@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
             android:id="@+id/textView"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/textColor" />
 
         <TextView
             android:text="@string/the_mit_license_mit_copyright_c_2016_mark_wen"
@@ -37,7 +38,8 @@
             android:id="@+id/textView4"
             android:textSize="10sp"
             android:textAlignment="center"
-            tools:ignore="SmallSp" />
+            tools:ignore="SmallSp"
+            android:textColor="@color/textColorLight" />
 
         <!--android:layout_below="@+id/textView"-->
         android:layout_centerHorizontal="true" />

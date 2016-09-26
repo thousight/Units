@@ -1,9 +1,13 @@
 package space.markwen.www.units;
 
 import android.app.Fragment;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -12,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -41,6 +46,9 @@ import static space.markwen.www.units.R.id.ydText;
         double standard = 1.000000; // convert input into meters
         String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
         EditText textbox;
+        AppCompatActivity activity;
+        Toolbar toolbar;
+        LinearLayout colorBoard;
 
         TextView kmTextView;
         TextView mTextView;
@@ -57,13 +65,22 @@ import static space.markwen.www.units.R.id.ydText;
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-            // Change FrameLayout to content_length
-            lengthView = inflater.inflate(R.layout.content_length, container, false);
-            // Change the title on titlebar to Length
-            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Length");
+            lengthView = inflater.inflate(R.layout.content_length, container, false); // Change FrameLayout to content_length
+            activity = ((AppCompatActivity) getActivity());
+            spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
+            textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
+            colorBoard = (LinearLayout) lengthView.findViewById(R.id.colorBoard);
+
+            // Changing theme
+            activity.getSupportActionBar().setTitle("Length");
+            activity.setTheme(R.style.LengthTheme); // Theme
+            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#333333"))); // Action bar
+            colorBoard.setBackgroundColor(Color.parseColor("#333333")); // colorBoard
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                activity.getWindow().setStatusBarColor(Color.parseColor("#212121")); // Status bar
+            }
 
             // Textbox handler
-            textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
             textbox.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -83,7 +100,6 @@ import static space.markwen.www.units.R.id.ydText;
             });
 
             // Spinner handler
-            spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, lengthUnits);
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner.setAdapter(adapter);
@@ -104,6 +120,8 @@ import static space.markwen.www.units.R.id.ydText;
             return lengthView;
         }
 
+
+        // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
             kmTextView = (TextView) lengthView.findViewById(kmText);
