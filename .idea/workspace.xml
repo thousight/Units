@@ -31,9 +31,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a0d9be-efa2-4b2b-99ec-602c5c04480c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" />
     </list>
     <ignored path="Units.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,57 +72,23 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="247">
+              <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_length.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_length.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-              <folding>
-                <element signature="e#3605#4854#0" expanded="false" />
-                <element signature="e#3795#4315#0" expanded="false" />
-                <element signature="e#4919#5088#0" expanded="false" />
-                <element signature="e#5105#6349#0" expanded="false" />
-                <element signature="e#6367#6536#0" expanded="false" />
-                <element signature="e#6553#7803#0" expanded="false" />
-                <element signature="e#7821#7990#0" expanded="false" />
-                <element signature="e#8007#9257#0" expanded="false" />
-                <element signature="e#9275#9444#0" expanded="false" />
-                <element signature="e#9461#10711#0" expanded="false" />
-                <element signature="e#10729#10898#0" expanded="false" />
-                <element signature="e#10915#12164#0" expanded="false" />
-                <element signature="e#12182#12351#0" expanded="false" />
-                <element signature="e#12368#13612#0" expanded="false" />
-                <element signature="e#13630#13799#0" expanded="false" />
-                <element signature="e#13816#15060#0" expanded="false" />
-                <element signature="e#15078#15247#0" expanded="false" />
-                <element signature="e#15264#16507#0" expanded="false" />
-                <element signature="e#16525#16694#0" expanded="false" />
-                <element signature="e#16711#17958#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LengthActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LengthActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+            <state relative-caret-position="496">
+              <caret line="77" column="116" selection-start-line="77" selection-start-column="116" selection-end-line="77" selection-end-column="116" />
               <folding>
-                <element signature="method#beforeTextChanged#0;class#3147:3666" expanded="false" />
-                <element signature="method#onTextChanged#0;class#3147:3666" expanded="false" />
-                <element signature="e#3760#3768#0" expanded="true" />
-                <element signature="method#onNothingSelected#0;class#4019:4544" expanded="false" />
+                <element signature="method#beforeTextChanged#0;class#3300:3819" expanded="false" />
+                <element signature="method#onTextChanged#0;class#3300:3819" expanded="false" />
+                <element signature="e#3913#3921#0" expanded="true" />
+                <element signature="method#onNothingSelected#0;class#4172:4697" expanded="false" />
                 <element signature="method#convertInput#0;class#LengthActivity#0" expanded="false" />
                 <element signature="method#numberFormatter#0;class#LengthActivity#0" expanded="false" />
                 <element signature="method#outputBasedOnText#0;class#LengthActivity#0" expanded="false" />
@@ -128,12 +97,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="WeightActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="185" column="64" selection-start-line="185" selection-start-column="64" selection-end-line="185" selection-end-column="64" />
+              <folding>
+                <element signature="method#beforeTextChanged#0;class#3059:3530" expanded="false" />
+                <element signature="method#onTextChanged#0;class#3059:3530" expanded="false" />
+                <element signature="e#3616#3624#0" expanded="true" />
+                <element signature="method#onNothingSelected#0;class#3863:4348" expanded="false" />
+                <element signature="method#numberFormatter#0;class#WeightActivity#0" expanded="false" />
+                <element signature="method#outputBasedOnText#0;class#WeightActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="lengthTheme.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+            <state relative-caret-position="154">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="40" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_weight.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
+              <folding>
+                <element signature="e#3611#4860#0" expanded="false" />
+                <element signature="e#4925#5094#0" expanded="false" />
+                <element signature="e#5111#6359#0" expanded="false" />
+                <element signature="e#6377#6546#0" expanded="false" />
+                <element signature="e#6563#7806#0" expanded="false" />
+                <element signature="e#7824#7993#0" expanded="false" />
+                <element signature="e#8010#9259#0" expanded="false" />
+                <element signature="e#9277#9446#0" expanded="false" />
+                <element signature="e#9463#10712#0" expanded="false" />
+                <element signature="e#10730#10899#0" expanded="false" />
+                <element signature="e#10916#12168#0" expanded="false" />
+                <element signature="e#12186#12355#0" expanded="false" />
+                <element signature="e#12372#13617#0" expanded="false" />
+                <element signature="e#13635#13804#0" expanded="false" />
+                <element signature="e#13821#15066#0" expanded="false" />
+                <element signature="e#15084#15253#0" expanded="false" />
+                <element signature="e#15270#16515#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1801,9 +1818,7 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_helpxml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_temperature.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/TemperatureActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_help.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/HelpActivity.java" />
@@ -1822,9 +1837,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_about.xml" />
         <option value="$USER_HOME$/AppData/Local/Android/sdk/platforms/android-24/data/res/layout/simple_spinner_item.xml" />
         <option value="$USER_HOME$/AppData/Local/Android/sdk/platforms/android-24/data/res/layout/simple_spinner_dropdown_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java" />
       </list>
     </option>
   </component>
@@ -1880,74 +1898,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Units" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Units" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Units" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Units" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Units" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="ProjectPane" />
       <pane id="PackagesPane" />
@@ -1972,6 +1923,7 @@
       <recent name="space.markwen.www.units" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\markw\OneDrive\Documents\GitHub\Units\app\src\main\res\values" />
       <recent name="C:\Users\markw\OneDrive\Documents\GitHub\Units\app\src\main\res\layout" />
     </key>
   </component>
@@ -2374,7 +2326,7 @@
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906102" sideWeight="0.49785176" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2523474" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23474178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2384,7 +2336,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.4935553" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20676692" sideWeight="0.4939759" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42777777" sideWeight="0.4939759" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2451,22 +2403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2481,6 +2417,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2488,6 +2425,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2506,6 +2444,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2517,17 +2456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_temperature.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2536,13 +2464,6 @@
         <state relative-caret-position="198">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2576,16 +2497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2630,6 +2541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2637,17 +2549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -2710,14 +2611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -2812,38 +2705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_length.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-          <folding>
-            <element signature="e#3605#4854#0" expanded="false" />
-            <element signature="e#3795#4315#0" expanded="false" />
-            <element signature="e#4919#5088#0" expanded="false" />
-            <element signature="e#5105#6349#0" expanded="false" />
-            <element signature="e#6367#6536#0" expanded="false" />
-            <element signature="e#6553#7803#0" expanded="false" />
-            <element signature="e#7821#7990#0" expanded="false" />
-            <element signature="e#8007#9257#0" expanded="false" />
-            <element signature="e#9275#9444#0" expanded="false" />
-            <element signature="e#9461#10711#0" expanded="false" />
-            <element signature="e#10729#10898#0" expanded="false" />
-            <element signature="e#10915#12164#0" expanded="false" />
-            <element signature="e#12182#12351#0" expanded="false" />
-            <element signature="e#12368#13612#0" expanded="false" />
-            <element signature="e#13630#13799#0" expanded="false" />
-            <element signature="e#13816#15060#0" expanded="false" />
-            <element signature="e#15078#15247#0" expanded="false" />
-            <element signature="e#15264#16507#0" expanded="false" />
-            <element signature="e#16525#16694#0" expanded="false" />
-            <element signature="e#16711#17958#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -2852,26 +2713,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_length.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="76" column="25" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="25" />
+          <folding>
+            <element signature="e#3616#4865#0" expanded="false" />
+            <element signature="e#3806#4326#0" expanded="false" />
+            <element signature="e#4930#5099#0" expanded="false" />
+            <element signature="e#5116#6360#0" expanded="false" />
+            <element signature="e#6378#6547#0" expanded="false" />
+            <element signature="e#6564#7814#0" expanded="false" />
+            <element signature="e#7832#8001#0" expanded="false" />
+            <element signature="e#8018#9268#0" expanded="false" />
+            <element signature="e#9286#9455#0" expanded="false" />
+            <element signature="e#9472#10722#0" expanded="false" />
+            <element signature="e#10740#10909#0" expanded="false" />
+            <element signature="e#10926#12175#0" expanded="false" />
+            <element signature="e#12193#12362#0" expanded="false" />
+            <element signature="e#12379#13623#0" expanded="false" />
+            <element signature="e#13641#13810#0" expanded="false" />
+            <element signature="e#13827#15071#0" expanded="false" />
+            <element signature="e#15089#15258#0" expanded="false" />
+            <element signature="e#15275#16518#0" expanded="false" />
+            <element signature="e#16536#16705#0" expanded="false" />
+            <element signature="e#16722#17969#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
+          <folding>
+            <element signature="e#3611#4860#0" expanded="false" />
+            <element signature="e#4925#5094#0" expanded="false" />
+            <element signature="e#5111#6359#0" expanded="false" />
+            <element signature="e#6377#6546#0" expanded="false" />
+            <element signature="e#6563#7806#0" expanded="false" />
+            <element signature="e#7824#7993#0" expanded="false" />
+            <element signature="e#8010#9259#0" expanded="false" />
+            <element signature="e#9277#9446#0" expanded="false" />
+            <element signature="e#9463#10712#0" expanded="false" />
+            <element signature="e#10730#10899#0" expanded="false" />
+            <element signature="e#10916#12168#0" expanded="false" />
+            <element signature="e#12186#12355#0" expanded="false" />
+            <element signature="e#12372#13617#0" expanded="false" />
+            <element signature="e#13635#13804#0" expanded="false" />
+            <element signature="e#13821#15066#0" expanded="false" />
+            <element signature="e#15084#15253#0" expanded="false" />
+            <element signature="e#15270#16515#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="61" column="57" selection-start-line="61" selection-start-column="57" selection-end-line="61" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+        <state relative-caret-position="154">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-24/android/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="1541" column="16" selection-start-line="1541" selection-start-column="16" selection-end-line="1541" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/LengthActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+        <state relative-caret-position="496">
+          <caret line="77" column="116" selection-start-line="77" selection-start-column="116" selection-end-line="77" selection-end-column="116" />
           <folding>
-            <element signature="method#beforeTextChanged#0;class#3147:3666" expanded="false" />
-            <element signature="method#onTextChanged#0;class#3147:3666" expanded="false" />
-            <element signature="e#3760#3768#0" expanded="true" />
-            <element signature="method#onNothingSelected#0;class#4019:4544" expanded="false" />
+            <element signature="method#beforeTextChanged#0;class#3300:3819" expanded="false" />
+            <element signature="method#onTextChanged#0;class#3300:3819" expanded="false" />
+            <element signature="e#3913#3921#0" expanded="true" />
+            <element signature="method#onNothingSelected#0;class#4172:4697" expanded="false" />
             <element signature="method#convertInput#0;class#LengthActivity#0" expanded="false" />
             <element signature="method#numberFormatter#0;class#LengthActivity#0" expanded="false" />
             <element signature="method#outputBasedOnText#0;class#LengthActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/WeightActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="185" column="64" selection-start-line="185" selection-start-column="64" selection-end-line="185" selection-end-column="64" />
+          <folding>
+            <element signature="method#beforeTextChanged#0;class#3059:3530" expanded="false" />
+            <element signature="method#onTextChanged#0;class#3059:3530" expanded="false" />
+            <element signature="e#3616#3624#0" expanded="true" />
+            <element signature="method#onNothingSelected#0;class#3863:4348" expanded="false" />
+            <element signature="method#numberFormatter#0;class#WeightActivity#0" expanded="false" />
+            <element signature="method#outputBasedOnText#0;class#WeightActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>

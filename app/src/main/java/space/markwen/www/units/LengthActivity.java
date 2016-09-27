@@ -2,6 +2,7 @@ package space.markwen.www.units;
 
 import android.app.Fragment;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -41,7 +42,7 @@ import static space.markwen.www.units.R.id.ydText;
 
         View lengthView;
         Spinner spinner;
-        String selectedUnit = "m";
+        String selectedUnit;
         double standard = 1.000000; // convert input into meters
         String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
         EditText textbox;
@@ -67,13 +68,14 @@ import static space.markwen.www.units.R.id.ydText;
             activity = ((AppCompatActivity) getActivity());
             spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
             textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
-            colorBoard = (LinearLayout) lengthView.findViewById(R.id.colorBoard);
+            colorBoard = (LinearLayout) lengthView.findViewById(R.id.lengthColorBoard);
 
             // Changing theme
             activity.getSupportActionBar().setTitle("Length");
             activity.setTheme(R.style.LengthTheme); // Theme
             activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#333333"))); // Action bar
             colorBoard.setBackgroundColor(Color.parseColor("#333333")); // colorBoard
+            textbox.getBackground().setColorFilter(Color.parseColor("#1EC7AC"), PorterDuff.Mode.SRC_IN); // EditText
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 activity.getWindow().setStatusBarColor(Color.parseColor("#212121")); // Status bar
             }
