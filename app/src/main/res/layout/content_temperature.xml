@@ -1,17 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--Top colored area-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        android:weightSum="1"
+        android:id="@+id/tempColorBoard"
+        tools:ignore="ExtraText"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+        <!--Top input card-->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/input_card"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardBackgroundColor="@color/cardview_light_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/tempEditText"
+                    android:textSize="30sp"
+                    android:layout_weight="1.01"
+                    tools:ignore="InefficientWeight"
+                    android:gravity="end"
+                    android:textColor="@color/textColor" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="57dp"
+                    android:id="@+id/tempSpinner"
+                    android:theme="@style/AppTheme" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <!--Card consisting the list of results-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/result_card"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Temperature"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:id="@+id/textView3"
-        android:layout_marginTop="17dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardUseCompatPadding="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp" />
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        card_view:cardBackgroundColor="@color/cardview_light_background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/CText"
+                        android:maxLines="1"
+                        android:maxLength="14"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:text=" Celsius"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText"
+                        android:textColor="@color/textColor" />
+                </LinearLayout>
+
+                <!--Horizontal divider line-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/FText"
+                        android:maxLines="1"
+                        android:maxLength="14"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:textAlignment="viewStart"
+                        android:layout_weight="1"
+                        android:text=" Fahrenheit"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:textAlignment="textEnd"
+                        android:id="@+id/KText"
+                        android:maxLines="1"
+                        android:maxLength="14"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textAlignment="viewStart"
+                        android:text=" Kelvin"
+                        android:textSize="20sp"
+                        android:textColor="@color/textColor"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
 </RelativeLayout>
