@@ -33,7 +33,7 @@ import static space.markwen.www.units.R.id.KmpLText;
 
     public class FuelActivity extends Fragment {
 
-        View lengthView;
+        View fuelView;
         Spinner spinner;
         String selectedUnit;
         double standard = 1.000000; // convert input into meters
@@ -45,17 +45,16 @@ import static space.markwen.www.units.R.id.KmpLText;
         TextView USMPGTextView;
         TextView UKMPGTextView;
         TextView KmpLTextView;
-        TextView Lp100kmTextView;
 
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-            lengthView = inflater.inflate(R.layout.content_fuel, container, false); // Change FrameLayout to content_length
+            fuelView = inflater.inflate(R.layout.content_fuel, container, false); // Change FrameLayout to content_length
             activity = ((AppCompatActivity) getActivity());
-            spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
-            textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
-            colorBoard = (LinearLayout) lengthView.findViewById(R.id.lengthColorBoard);
+            spinner = (Spinner) fuelView.findViewById(R.id.fuelSpinner);
+            textbox = (EditText) fuelView.findViewById(R.id.fuelEditText);
+            colorBoard = (LinearLayout) fuelView.findViewById(R.id.fuelColorBoard);
 
             // Changing theme
             activity.getSupportActionBar().setTitle("Fuel Economy");
@@ -104,16 +103,16 @@ import static space.markwen.www.units.R.id.KmpLText;
                 }
             });
 
-            return lengthView;
+            return fuelView;
         }
 
 
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            USMPGTextView = (TextView) lengthView.findViewById(USMPGText);
-            UKMPGTextView = (TextView) lengthView.findViewById(UKMPGText);
-            KmpLTextView = (TextView) lengthView.findViewById(KmpLText);
+            USMPGTextView = (TextView) fuelView.findViewById(USMPGText);
+            UKMPGTextView = (TextView) fuelView.findViewById(UKMPGText);
+            KmpLTextView = (TextView) fuelView.findViewById(KmpLText);
 
             if (input != 0) {
                 // Set standard value in meters based on selected unit

@@ -35,7 +35,7 @@ import static space.markwen.www.units.R.id.mpsText;
 
     public class SpeedActivity extends Fragment {
 
-        View lengthView;
+        View speedView;
         Spinner spinner;
         String selectedUnit;
         double standard = 1.000000; // convert input into meters
@@ -54,11 +54,11 @@ import static space.markwen.www.units.R.id.mpsText;
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-            lengthView = inflater.inflate(R.layout.content_speed, container, false); // Change FrameLayout to content_length
+            speedView = inflater.inflate(R.layout.content_speed, container, false); // Change FrameLayout to content_length
             activity = ((AppCompatActivity) getActivity());
-            spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
-            textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
-            colorBoard = (LinearLayout) lengthView.findViewById(R.id.lengthColorBoard);
+            spinner = (Spinner) speedView.findViewById(R.id.speedSpinner);
+            textbox = (EditText) speedView.findViewById(R.id.speedEditText);
+            colorBoard = (LinearLayout) speedView.findViewById(R.id.speedColorBoard);
 
             // Changing theme
             activity.getSupportActionBar().setTitle("Speed");
@@ -107,18 +107,18 @@ import static space.markwen.www.units.R.id.mpsText;
                 }
             });
 
-            return lengthView;
+            return speedView;
         }
 
 
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            MphTextView = (TextView) lengthView.findViewById(MphText);
-            FtpsTextView = (TextView) lengthView.findViewById(ftpsText);
-            mpsTextView = (TextView) lengthView.findViewById(mpsText);
-            kmphTextView = (TextView) lengthView.findViewById(kmphText);
-            KnotTextView = (TextView) lengthView.findViewById(KnotText);
+            MphTextView = (TextView) speedView.findViewById(MphText);
+            FtpsTextView = (TextView) speedView.findViewById(ftpsText);
+            mpsTextView = (TextView) speedView.findViewById(mpsText);
+            kmphTextView = (TextView) speedView.findViewById(kmphText);
+            KnotTextView = (TextView) speedView.findViewById(KnotText);
             if (input != 0) {
                 // Set standard value in meters based on selected unit
                 switch (selectedUnit) {

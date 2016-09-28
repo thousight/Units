@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -13,14 +12,14 @@
         android:layout_height="180dp"
         android:background="@color/colorPrimary"
         android:weightSum="1"
-        android:id="@+id/speedColorBoard"
+        android:id="@+id/programmingColorBoard"
         tools:ignore="ExtraText"
         xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
         <!--Top input card-->
         <android.support.v7.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/lengthInputCard"
+            android:id="@+id/input_card"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_width="match_parent"
@@ -41,7 +40,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:ems="10"
-                    android:id="@+id/speedEditText"
+                    android:id="@+id/programmingEditText"
                     android:textSize="30sp"
                     android:layout_weight="1.01"
                     tools:ignore="InefficientWeight"
@@ -49,10 +48,10 @@
                     android:textColor="@color/textColor" />
 
                 <Spinner
+                    android:layout_width="100dp"
                     android:layout_height="57dp"
-                    android:id="@+id/speedSpinner"
-                    android:theme="@style/AppTheme"
-                    android:layout_width="110dp" />
+                    android:id="@+id/programmingSpinner"
+                    android:theme="@style/AppTheme" />
 
             </LinearLayout>
 
@@ -83,7 +82,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:theme="@style/SpeedTheme">
+            android:theme="@style/ProgrammingTheme">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -100,20 +99,19 @@
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:id="@+id/MphText"
+                        android:id="@+id/CText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"/>
-
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" miles per hour"
+                        android:text=" Celsius"
                         android:textSize="@dimen/font_size"
                         tools:ignore="HardcodedText"
                         android:textColor="@color/textColor" />
@@ -133,12 +131,11 @@
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:id="@+id/ftpsText"
+                        android:id="@+id/FText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
                         android:textSize="@dimen/font_size"
-
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
@@ -146,7 +143,7 @@
                         android:gravity="center"
                         android:textAlignment="viewStart"
                         android:layout_weight="1"
-                        android:text=" feet per second"
+                        android:text=" Fahrenheit"
                         android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
@@ -165,7 +162,7 @@
                         android:layout_height="60dp"
                         android:gravity="center"
                         android:textAlignment="textEnd"
-                        android:id="@+id/mpsText"
+                        android:id="@+id/KText"
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
@@ -177,69 +174,7 @@
                         android:gravity="center"
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
-                        android:text=" meters per second"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"
-                        tools:ignore="HardcodedText" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/lightGray"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:textAlignment="textEnd"
-                        android:id="@+id/kmphText"
-                        android:maxLines="1"
-                        android:maxLength="14"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:textAlignment="viewStart"
-                        android:text=" kilometer per hour"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"
-                        tools:ignore="HardcodedText" />
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/lightGray"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:textAlignment="textEnd"
-                        android:id="@+id/KnotText"
-                        android:maxLines="1"
-                        android:maxLength="14"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:textAlignment="viewStart"
-                        android:text=" Knots"
+                        android:text=" Kelvin"
                         android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />

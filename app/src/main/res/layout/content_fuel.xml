@@ -13,7 +13,7 @@
         android:layout_height="180dp"
         android:background="@color/colorPrimary"
         android:weightSum="1"
-        android:id="@+id/lengthColorBoard"
+        android:id="@+id/fuelColorBoard"
         tools:ignore="ExtraText"
         xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
                     android:ems="10"
-                    android:id="@+id/lengthEditText"
+                    android:id="@+id/fuelEditText"
                     android:textSize="30sp"
                     android:layout_weight="1.01"
                     tools:ignore="InefficientWeight"
@@ -50,7 +50,7 @@
 
                 <Spinner
                     android:layout_height="57dp"
-                    android:id="@+id/lengthSpinner"
+                    android:id="@+id/fuelSpinner"
                     android:theme="@style/AppTheme"
                     android:layout_width="110dp" />
 

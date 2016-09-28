@@ -64,9 +64,9 @@ import static space.markwen.www.units.R.id.yd2Text;
 
             areaView = inflater.inflate(R.layout.content_area, container, false); // Change FrameLayout to content_length
             activity = ((AppCompatActivity) getActivity());
-            spinner = (Spinner) areaView.findViewById(R.id.lengthSpinner);
-            textbox = (EditText) areaView.findViewById(R.id.lengthEditText);
-            colorBoard = (LinearLayout) areaView.findViewById(R.id.lengthColorBoard);
+            spinner = (Spinner) areaView.findViewById(R.id.areaSpinner);
+            textbox = (EditText) areaView.findViewById(R.id.areaEditText);
+            colorBoard = (LinearLayout) areaView.findViewById(R.id.areaColorBoard);
 
             // Changing theme
             activity.getSupportActionBar().setTitle("Area");

@@ -40,7 +40,7 @@ import static space.markwen.www.units.R.id.ydText;
 
     public class ProgrammingActivity extends Fragment {
 
-        View lengthView;
+        View programmingView;
         Spinner spinner;
         String selectedUnit;
         double standard = 1.000000; // convert input into meters
@@ -64,20 +64,20 @@ import static space.markwen.www.units.R.id.ydText;
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-            lengthView = inflater.inflate(R.layout.content_length, container, false); // Change FrameLayout to content_length
+            programmingView = inflater.inflate(R.layout.content_programming, container, false); // Change FrameLayout to content_length
             activity = ((AppCompatActivity) getActivity());
-            spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
-            textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
-            colorBoard = (LinearLayout) lengthView.findViewById(R.id.lengthColorBoard);
+            spinner = (Spinner) programmingView.findViewById(R.id.programmingSpinner);
+            textbox = (EditText) programmingView.findViewById(R.id.programmingEditText);
+            colorBoard = (LinearLayout) programmingView.findViewById(R.id.programmingColorBoard);
 
             // Changing theme
-            activity.getSupportActionBar().setTitle("Length");
-            activity.setTheme(R.style.LengthTheme); // Theme
-            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#333333"))); // Action bar
-            colorBoard.setBackgroundColor(Color.parseColor("#333333")); // colorBoard
-            textbox.getBackground().setColorFilter(Color.parseColor("#1EC7AC"), PorterDuff.Mode.SRC_IN); // EditText
+            activity.getSupportActionBar().setTitle("Programming");
+            activity.setTheme(R.style.ProgrammingTheme); // Theme
+            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#6D4C41"))); // Action bar
+            colorBoard.setBackgroundColor(Color.parseColor("#6D4C41")); // colorBoard
+            textbox.getBackground().setColorFilter(Color.parseColor("#018989"), PorterDuff.Mode.SRC_IN); // EditText
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                activity.getWindow().setStatusBarColor(Color.parseColor("#212121")); // Status bar
+                activity.getWindow().setStatusBarColor(Color.parseColor("#3E2723")); // Status bar
             }
 
             // Textbox handler
@@ -117,23 +117,23 @@ import static space.markwen.www.units.R.id.ydText;
                 }
             });
 
-            return lengthView;
+            return programmingView;
         }
 
 
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            kmTextView = (TextView) lengthView.findViewById(kmText);
-            mTextView = (TextView) lengthView.findViewById(mText);
-            cmTextView = (TextView) lengthView.findViewById(cmText);
-            mmTextView = (TextView) lengthView.findViewById(mmText);
-            umTextView = (TextView) lengthView.findViewById(umText);
-            nmTextView = (TextView) lengthView.findViewById(nmText);
-            miTextView = (TextView) lengthView.findViewById(miText);
-            ydTextView = (TextView) lengthView.findViewById(ydText);
-            ftTextView = (TextView) lengthView.findViewById(ftText);
-            inTextView = (TextView) lengthView.findViewById(inText);
+            kmTextView = (TextView) programmingView.findViewById(kmText);
+            mTextView = (TextView) programmingView.findViewById(mText);
+            cmTextView = (TextView) programmingView.findViewById(cmText);
+            mmTextView = (TextView) programmingView.findViewById(mmText);
+            umTextView = (TextView) programmingView.findViewById(umText);
+            nmTextView = (TextView) programmingView.findViewById(nmText);
+            miTextView = (TextView) programmingView.findViewById(miText);
+            ydTextView = (TextView) programmingView.findViewById(ydText);
+            ftTextView = (TextView) programmingView.findViewById(ftText);
+            inTextView = (TextView) programmingView.findViewById(inText);
 
             if (input != 0) {
                 // Set standard value in meters based on selected unit
