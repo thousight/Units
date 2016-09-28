@@ -65,10 +65,6 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new TemperatureActivity())
                     .commit();
-        } else if (id == R.id.nav_about) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new AboutActivity())
-                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
