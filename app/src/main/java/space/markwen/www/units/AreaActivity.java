@@ -71,11 +71,11 @@ import static space.markwen.www.units.R.id.yd2Text;
             // Changing theme
             activity.getSupportActionBar().setTitle("Area");
             activity.setTheme(R.style.AreaTheme); // Theme
-            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#FF9800"))); // Action bar
-            colorBoard.setBackgroundColor(Color.parseColor("#FF9800")); // colorBoard
-            textbox.getBackground().setColorFilter(Color.parseColor("#2196F3"), PorterDuff.Mode.SRC_IN); // EditText
+            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#9c27b0"))); // Action bar
+            colorBoard.setBackgroundColor(Color.parseColor("#9c27b0")); // colorBoard
+            textbox.getBackground().setColorFilter(Color.parseColor("#4caf50"), PorterDuff.Mode.SRC_IN); // EditText
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                activity.getWindow().setStatusBarColor(Color.parseColor("#f57c00")); // Status bar
+                activity.getWindow().setStatusBarColor(Color.parseColor("#7b1fa2")); // Status bar
             }
 
             // Textbox handler

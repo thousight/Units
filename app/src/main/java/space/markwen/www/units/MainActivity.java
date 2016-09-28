@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new AreaActivity())
                     .commit();
-        } else if (id == R.id.nav_data) {
+        } else if (id == R.id.nav_fuel) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new DataActivity())
+                    .replace(R.id.content_frame, new FuelActivity())
                     .commit();
         } else if (id == R.id.nav_length) {
             fragmentManager.beginTransaction()

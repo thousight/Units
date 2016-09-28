@@ -32,34 +32,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13a0d9be-efa2-4b2b-99ec-602c5c04480c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/DataActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/ProgrammingActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/SpeedActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_code.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_data.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_money.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speed.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_triangle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_area.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-hdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-mdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-xhdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-xxhdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-xxxhdpi/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_fuel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_fuel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/fuelTheme.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_data.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/DataActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/FuelActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_temperature.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_temperature.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/temperatureTheme.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/temperatureTheme.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml" />
     </list>
     <ignored path="Units.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,32 +78,49 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="206">
+              <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_weight.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml">
+      <file leaf-file-name="FuelActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/FuelActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+            <state relative-caret-position="514">
+              <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_fuel.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_fuel.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="31" />
               <folding>
-                <element signature="e#4996#5165#0" expanded="false" />
-                <element signature="e#6472#6641#0" expanded="false" />
-                <element signature="e#7943#8112#0" expanded="false" />
-                <element signature="e#9420#9589#0" expanded="false" />
-                <element signature="e#10897#11066#0" expanded="false" />
-                <element signature="e#12377#12546#0" expanded="false" />
-                <element signature="e#13850#14019#0" expanded="false" />
-                <element signature="e#15323#15492#0" expanded="false" />
+                <element signature="e#3665#4938#0" expanded="false" />
+                <element signature="e#5003#5172#0" expanded="false" />
+                <element signature="e#5189#6462#0" expanded="false" />
+                <element signature="e#6480#6649#0" expanded="false" />
+                <element signature="e#6666#7943#0" expanded="false" />
               </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fuelTheme.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/fuelTheme.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="40" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -1807,9 +1807,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/ProgrammingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/DataActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/SpeedActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-small/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values-xhdpi/dimens.xml" />
@@ -1820,10 +1817,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/lengthTheme.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/temperatureTheme.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_length.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_temperature.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/fuelTheme.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_fuel.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/FuelActivity.java" />
       </list>
     </option>
   </component>
@@ -1936,6 +1939,24 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Units" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
@@ -2006,8 +2027,8 @@
       <recent name="space.markwen.www.units" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\markw\OneDrive\Documents\GitHub\Units\app\src\main\res\values" />
       <recent name="C:\Users\markw\OneDrive\Documents\GitHub\Units\app\src\main\res\layout" />
+      <recent name="C:\Users\markw\OneDrive\Documents\GitHub\Units\app\src\main\res\values" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -2420,6 +2441,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21052632" sideWeight="0.4939759" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2430,7 +2452,6 @@
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2486,23 +2507,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/space/markwen/www/units/R.java" />
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -2553,6 +2557,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="1541" column="16" selection-start-line="1541" selection-start-column="16" selection-end-line="1541" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2656,22 +2661,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/ProgrammingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/DataActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/SpeedActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2696,28 +2685,6 @@
             <element signature="e#3119#3127#0" expanded="true" />
             <element signature="method#numberFormatter#0;class#TemperatureActivity#0" expanded="false" />
             <element signature="method#outputBasedOnText#0;class#TemperatureActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="73" column="108" selection-start-line="73" selection-start-column="108" selection-end-line="73" selection-end-column="108" />
-          <folding>
-            <element signature="method#numberFormatter#0;class#AreaActivity#0" expanded="false" />
-            <element signature="method#outputBasedOnText#0;class#AreaActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2809,14 +2776,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/weightTheme.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
@@ -2918,18 +2877,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_weight.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="84" column="40" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        <state relative-caret-position="1980">
+          <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
           <folding>
             <element signature="e#4996#5165#0" expanded="false" />
             <element signature="e#6472#6641#0" expanded="false" />
@@ -2944,6 +2895,93 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/ProgrammingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/DataActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/AreaActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="75" column="76" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="76" />
+          <folding>
+            <element signature="method#numberFormatter#0;class#AreaActivity#0" expanded="false" />
+            <element signature="method#outputBasedOnText#0;class#AreaActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/areaTheme.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/fuelTheme.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_fuel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="183" column="31" selection-start-line="183" selection-start-column="31" selection-end-line="183" selection-end-column="31" />
+          <folding>
+            <element signature="e#3665#4938#0" expanded="false" />
+            <element signature="e#5003#5172#0" expanded="false" />
+            <element signature="e#5189#6462#0" expanded="false" />
+            <element signature="e#6480#6649#0" expanded="false" />
+            <element signature="e#6666#7943#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/space/markwen/www/units/FuelActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
