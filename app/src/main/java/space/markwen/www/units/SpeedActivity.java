@@ -23,16 +23,11 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import static space.markwen.www.units.R.id.cmText;
-import static space.markwen.www.units.R.id.ftText;
-import static space.markwen.www.units.R.id.inText;
-import static space.markwen.www.units.R.id.kmText;
-import static space.markwen.www.units.R.id.mText;
-import static space.markwen.www.units.R.id.miText;
-import static space.markwen.www.units.R.id.mmText;
-import static space.markwen.www.units.R.id.nmText;
-import static space.markwen.www.units.R.id.umText;
-import static space.markwen.www.units.R.id.ydText;
+import static space.markwen.www.units.R.id.KnotText;
+import static space.markwen.www.units.R.id.MphText;
+import static space.markwen.www.units.R.id.ftpsText;
+import static space.markwen.www.units.R.id.kmphText;
+import static space.markwen.www.units.R.id.mpsText;
 
 /**
  * Created by markw on 9/20/2016.
@@ -44,40 +39,35 @@ import static space.markwen.www.units.R.id.ydText;
         Spinner spinner;
         String selectedUnit;
         double standard = 1.000000; // convert input into meters
-        String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
+        String[] lengthUnits = { "Mph", "Ftps", "mps", "kmph", "Knot" };
         EditText textbox;
         AppCompatActivity activity;
         LinearLayout colorBoard;
 
-        TextView kmTextView;
-        TextView mTextView;
-        TextView cmTextView;
-        TextView mmTextView;
-        TextView umTextView;
-        TextView nmTextView;
-        TextView miTextView;
-        TextView ydTextView;
-        TextView ftTextView;
-        TextView inTextView;
+        TextView MphTextView;
+        TextView FtpsTextView;
+        TextView mpsTextView;
+        TextView kmphTextView;
+        TextView KnotTextView;
 
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-            lengthView = inflater.inflate(R.layout.content_length, container, false); // Change FrameLayout to content_length
+            lengthView = inflater.inflate(R.layout.content_speed, container, false); // Change FrameLayout to content_length
             activity = ((AppCompatActivity) getActivity());
             spinner = (Spinner) lengthView.findViewById(R.id.lengthSpinner);
             textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
             colorBoard = (LinearLayout) lengthView.findViewById(R.id.lengthColorBoard);
 
             // Changing theme
-            activity.getSupportActionBar().setTitle("Length");
-            activity.setTheme(R.style.LengthTheme); // Theme
-            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#333333"))); // Action bar
-            colorBoard.setBackgroundColor(Color.parseColor("#333333")); // colorBoard
-            textbox.getBackground().setColorFilter(Color.parseColor("#1EC7AC"), PorterDuff.Mode.SRC_IN); // EditText
+            activity.getSupportActionBar().setTitle("Speed");
+            activity.setTheme(R.style.SpeedTheme); // Theme
+            activity.getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#33B5E5"))); // Action bar
+            colorBoard.setBackgroundColor(Color.parseColor("#33B5E5")); // colorBoard
+            textbox.getBackground().setColorFilter(Color.parseColor("#9E9E9E"), PorterDuff.Mode.SRC_IN); // EditText
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                activity.getWindow().setStatusBarColor(Color.parseColor("#212121")); // Status bar
+                activity.getWindow().setStatusBarColor(Color.parseColor("#0277BD")); // Status bar
             }
 
             // Textbox handler
@@ -124,95 +114,54 @@ import static space.markwen.www.units.R.id.ydText;
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            kmTextView = (TextView) lengthView.findViewById(kmText);
-            mTextView = (TextView) lengthView.findViewById(mText);
-            cmTextView = (TextView) lengthView.findViewById(cmText);
-            mmTextView = (TextView) lengthView.findViewById(mmText);
-            umTextView = (TextView) lengthView.findViewById(umText);
-            nmTextView = (TextView) lengthView.findViewById(nmText);
-            miTextView = (TextView) lengthView.findViewById(miText);
-            ydTextView = (TextView) lengthView.findViewById(ydText);
-            ftTextView = (TextView) lengthView.findViewById(ftText);
-            inTextView = (TextView) lengthView.findViewById(inText);
-
+            MphTextView = (TextView) lengthView.findViewById(MphText);
+            FtpsTextView = (TextView) lengthView.findViewById(ftpsText);
+            mpsTextView = (TextView) lengthView.findViewById(mpsText);
+            kmphTextView = (TextView) lengthView.findViewById(kmphText);
+            KnotTextView = (TextView) lengthView.findViewById(KnotText);
             if (input != 0) {
                 // Set standard value in meters based on selected unit
                 switch (selectedUnit) {
-                    case "km":
-                        standard = input / 0.001;
+                    case "Mph":
+                        standard = input / 0.681818;
                         break;
-                    case "m":
+                    case "Ftps":
                         standard = input;
                         break;
-                    case "cm":
-                        standard = input / 100;
+                    case "mps":
+                        standard = input / 0.3048;
                         break;
-                    case "mm":
-                        standard = input / 1000;
+                    case "kmph":
+                        standard = input / 1.09728;
                         break;
-                    case "μm":
-                        standard = input / 1000000;
-                        break;
-                    case "nm":
-                        standard = input / 1000000000;
-                        break;
-                    case "mi":
-                        standard = input / 0.000621371;
-                        break;
-                    case "yd":
-                        standard = input / 1.09361;
-                        break;
-                    case "ft":
-                        standard = input / 3.28084;
-                        break;
-                    case "in":
-                        standard = input / 39.3701;
+                    case "Knot":
+                        standard = input / 0.592484;
                         break;
                     default:
                         standard = input;
                         break;
                 }
-                //km
-                kmTextView.setText(numberFormatter(standard * 0.001));
-                //m
-                mTextView.setText(numberFormatter(standard * 1));
-                //cm
-                cmTextView.setText(numberFormatter(standard * 100));
-                //mm
-                mmTextView.setText(numberFormatter(standard * 1000));
-                //um
-                umTextView.setText(numberFormatter(standard * 1000000));
-                //nm
-                nmTextView.setText(numberFormatter(standard * 1000000000));
-                //mi
-                miTextView.setText(numberFormatter(standard * 0.000621371));
-                //yd
-                ydTextView.setText(numberFormatter(standard * 1.09361));
-                //ft
-                ftTextView.setText(numberFormatter(standard * 3.28084));
-                //in
-                inTextView.setText(numberFormatter(standard * 39.3701));
+                //Mph
+                MphTextView.setText(numberFormatter(standard * 0.681818));
+                //Ftps
+                FtpsTextView.setText(numberFormatter(standard * 1));
+                //mps
+                mpsTextView.setText(numberFormatter(standard * 0.3048));
+                //kmph
+                kmphTextView.setText(numberFormatter(standard * 1.09728));
+                //Knot
+                KnotTextView.setText(numberFormatter(standard * 0.592484));
             } else {
-                //km
-                kmTextView.setText("");
-                //m
-                mTextView.setText("");
-                //cm
-                cmTextView.setText("");
-                //mm
-                mmTextView.setText("");
-                //um
-                umTextView.setText("");
-                //nm
-                nmTextView.setText("");
-                //mi
-                miTextView.setText("");
-                //yd
-                ydTextView.setText("");
-                //ft
-                ftTextView.setText("");
-                //in
-                inTextView.setText("");
+                //Mph
+                MphTextView.setText("");
+                //Ftps
+                FtpsTextView.setText("");
+                //mps
+                mpsTextView.setText("");
+                //kmph
+                kmphTextView.setText("");
+                //Knot
+                KnotTextView.setText("");
             }
         }
 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SpeedTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#33B5E5</item>
+        <item name="colorPrimaryDark">#0277BD</item>
+        <item name="colorAccent">#9E9E9E</item>
+        <item name="android:colorEdgeEffect">#33B5E5</item>
+    </style>
+
+    <style name="SpeedTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SpeedTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SpeedTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
