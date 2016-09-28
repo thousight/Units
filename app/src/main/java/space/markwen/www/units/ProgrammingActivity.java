@@ -23,16 +23,9 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import static space.markwen.www.units.R.id.cmText;
-import static space.markwen.www.units.R.id.ftText;
-import static space.markwen.www.units.R.id.inText;
-import static space.markwen.www.units.R.id.kmText;
-import static space.markwen.www.units.R.id.mText;
-import static space.markwen.www.units.R.id.miText;
-import static space.markwen.www.units.R.id.mmText;
-import static space.markwen.www.units.R.id.nmText;
-import static space.markwen.www.units.R.id.umText;
-import static space.markwen.www.units.R.id.ydText;
+import static space.markwen.www.units.R.id.hexText;
+import static space.markwen.www.units.R.id.decimalText;
+import static space.markwen.www.units.R.id.binaryText;
 
 /**
  * Created by markw on 9/20/2016.
@@ -44,21 +37,14 @@ import static space.markwen.www.units.R.id.ydText;
         Spinner spinner;
         String selectedUnit;
         double standard = 1.000000; // convert input into meters
-        String[] lengthUnits = { "km", "m", "cm", "mm", "μm", "nm", "mi", "yd", "ft", "in" };
+        String[] lengthUnits = { "decimal", "m", "hex" };
         EditText textbox;
         AppCompatActivity activity;
         LinearLayout colorBoard;
 
-        TextView kmTextView;
-        TextView mTextView;
-        TextView cmTextView;
-        TextView mmTextView;
-        TextView umTextView;
-        TextView nmTextView;
-        TextView miTextView;
-        TextView ydTextView;
-        TextView ftTextView;
-        TextView inTextView;
+        TextView decimalTextView;
+        TextView binaryTextView;
+        TextView hexTextView;
 
         @Nullable
         @Override
@@ -124,95 +110,39 @@ import static space.markwen.www.units.R.id.ydText;
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            kmTextView = (TextView) programmingView.findViewById(kmText);
-            mTextView = (TextView) programmingView.findViewById(mText);
-            cmTextView = (TextView) programmingView.findViewById(cmText);
-            mmTextView = (TextView) programmingView.findViewById(mmText);
-            umTextView = (TextView) programmingView.findViewById(umText);
-            nmTextView = (TextView) programmingView.findViewById(nmText);
-            miTextView = (TextView) programmingView.findViewById(miText);
-            ydTextView = (TextView) programmingView.findViewById(ydText);
-            ftTextView = (TextView) programmingView.findViewById(ftText);
-            inTextView = (TextView) programmingView.findViewById(inText);
+            decimalTextView = (TextView) programmingView.findViewById(decimalText);
+            binaryTextView = (TextView) programmingView.findViewById(binaryText);
+            hexTextView = (TextView) programmingView.findViewById(hexText);
 
             if (input != 0) {
                 // Set standard value in meters based on selected unit
                 switch (selectedUnit) {
-                    case "km":
-                        standard = input / 0.001;
-                        break;
-                    case "m":
+                    case "decimal":
                         standard = input;
                         break;
-                    case "cm":
+                    case "binary":
+                        standard = input;
+                        break;
+                    case "hex":
                         standard = input / 100;
-                        break;
-                    case "mm":
-                        standard = input / 1000;
-                        break;
-                    case "μm":
-                        standard = input / 1000000;
-                        break;
-                    case "nm":
-                        standard = input / 1000000000;
-                        break;
-                    case "mi":
-                        standard = input / 0.000621371;
-                        break;
-                    case "yd":
-                        standard = input / 1.09361;
-                        break;
-                    case "ft":
-                        standard = input / 3.28084;
-                        break;
-                    case "in":
-                        standard = input / 39.3701;
                         break;
                     default:
                         standard = input;
                         break;
                 }
-                //km
-                kmTextView.setText(numberFormatter(standard * 0.001));
-                //m
-                mTextView.setText(numberFormatter(standard * 1));
-                //cm
-                cmTextView.setText(numberFormatter(standard * 100));
-                //mm
-                mmTextView.setText(numberFormatter(standard * 1000));
-                //um
-                umTextView.setText(numberFormatter(standard * 1000000));
-                //nm
-                nmTextView.setText(numberFormatter(standard * 1000000000));
-                //mi
-                miTextView.setText(numberFormatter(standard * 0.000621371));
-                //yd
-                ydTextView.setText(numberFormatter(standard * 1.09361));
-                //ft
-                ftTextView.setText(numberFormatter(standard * 3.28084));
-                //in
-                inTextView.setText(numberFormatter(standard * 39.3701));
+                //decimal
+                decimalTextView.setText(numberFormatter(standard * 1));
+                //binary
+                binaryTextView.setText(numberFormatter(standard * 1));
+                //hex
+                hexTextView.setText(numberFormatter(standard * 100));
             } else {
-                //km
-                kmTextView.setText("");
-                //m
-                mTextView.setText("");
-                //cm
-                cmTextView.setText("");
-                //mm
-                mmTextView.setText("");
-                //um
-                umTextView.setText("");
-                //nm
-                nmTextView.setText("");
-                //mi
-                miTextView.setText("");
-                //yd
-                ydTextView.setText("");
-                //ft
-                ftTextView.setText("");
-                //in
-                inTextView.setText("");
+                //decimal
+                decimalTextView.setText("");
+                //binary
+                binaryTextView.setText("");
+                //hex
+                hexTextView.setText("");
             }
         }
 

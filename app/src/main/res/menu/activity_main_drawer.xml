@@ -14,10 +14,10 @@
             android:id="@+id/nav_length"
             android:icon="@drawable/ic_length"
             android:title="Length" />
-        <!--<item-->
-            <!--android:id="@+id/nav_programming"-->
-            <!--android:icon="@drawable/ic_code"-->
-            <!--android:title="Programming" />-->
+        <item
+            android:id="@+id/nav_programming"
+            android:icon="@drawable/ic_code"
+            android:title="Programming" />
         <item
             android:id="@+id/nav_speed"
             android:icon="@drawable/ic_speed"
