@@ -81,7 +81,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:theme="@style/TempTheme">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -102,7 +103,7 @@
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
@@ -111,7 +112,7 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" Celsius"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/font_size"
                         tools:ignore="HardcodedText"
                         android:textColor="@color/textColor" />
                 </LinearLayout>
@@ -134,7 +135,7 @@
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
@@ -143,7 +144,7 @@
                         android:textAlignment="viewStart"
                         android:layout_weight="1"
                         android:text=" Fahrenheit"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
@@ -165,7 +166,7 @@
                         android:maxLines="1"
                         android:maxLength="14"
                         android:layout_weight="1"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"/>
                     <TextView
                         android:layout_width="0dp"
@@ -174,7 +175,7 @@
                         android:layout_weight="1"
                         android:textAlignment="viewStart"
                         android:text=" Kelvin"
-                        android:textSize="20sp"
+                        android:textSize="@dimen/font_size"
                         android:textColor="@color/textColor"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>

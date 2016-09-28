@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AreaTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#f57c00</item>
+        <item name="colorAccent">#2196F3</item>
+        <item name="android:colorEdgeEffect">#FF9800</item>
+    </style>
+
+    <style name="AreaTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AreaTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AreaTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

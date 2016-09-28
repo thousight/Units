@@ -6,6 +6,7 @@
         <item name="colorPrimary">#3F51B5</item>
         <item name="colorPrimaryDark">#283593</item>
         <item name="colorAccent">#E91E63</item>
+        <item name="android:colorEdgeEffect">#3F51B5</item>
     </style>
 
     <style name="WeightTheme.NoActionBar">

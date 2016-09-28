@@ -6,6 +6,8 @@
         <item name="colorPrimary">#E53935</item>
         <item name="colorPrimaryDark">#B71C1C</item>
         <item name="colorAccent">#FFC107</item>
+        <item name="android:colorEdgeEffect">#E53935</item>
+
     </style>
 
     <style name="TempTheme.NoActionBar">

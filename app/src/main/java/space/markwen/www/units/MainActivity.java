@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity
         fragmentManager.beginTransaction()
                 .replace(R.id.content_frame, new LengthActivity())
                 .commit();
+
+        // Select content_length at start in side drawer
+        navigationView.setCheckedItem(R.id.nav_length);
     }
 
     @Override
@@ -53,17 +56,33 @@ public class MainActivity extends AppCompatActivity
 
         android.app.FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_length) {
+        if (id == R.id.nav_area) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new AreaActivity())
+                    .commit();
+        } else if (id == R.id.nav_data) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new DataActivity())
+                    .commit();
+        } else if (id == R.id.nav_length) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new LengthActivity())
                     .commit();
-        } else if (id == R.id.nav_weight) {
+        } else if (id == R.id.nav_programming) {
             fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new WeightActivity())
+                    .replace(R.id.content_frame, new ProgrammingActivity())
+                    .commit();
+        } else if (id == R.id.nav_speed) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new SpeedActivity())
                     .commit();
         } else if (id == R.id.nav_temperature) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new TemperatureActivity())
+                    .commit();
+        } else if (id == R.id.nav_weight) {
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, new WeightActivity())
                     .commit();
         }
 
