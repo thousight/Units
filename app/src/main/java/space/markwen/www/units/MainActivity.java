@@ -68,10 +68,10 @@ public class MainActivity extends AppCompatActivity
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new LengthActivity())
                     .commit();
-        } else if (id == R.id.nav_programming) {
-            fragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, new ProgrammingActivity())
-                    .commit();
+//        } else if (id == R.id.nav_programming) {
+//            fragmentManager.beginTransaction()
+//                    .replace(R.id.content_frame, new ProgrammingActivity())
+//                    .commit();
         } else if (id == R.id.nav_speed) {
             fragmentManager.beginTransaction()
                     .replace(R.id.content_frame, new SpeedActivity())
