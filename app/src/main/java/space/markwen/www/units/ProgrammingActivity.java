@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputFilter;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,9 +25,9 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import static space.markwen.www.units.R.id.hexText;
-import static space.markwen.www.units.R.id.decimalText;
 import static space.markwen.www.units.R.id.binaryText;
+import static space.markwen.www.units.R.id.decimalText;
+import static space.markwen.www.units.R.id.hexText;
 
 /**
  * Created by markw on 9/20/2016.
@@ -36,8 +38,8 @@ import static space.markwen.www.units.R.id.binaryText;
         View programmingView;
         Spinner spinner;
         String selectedUnit;
-        double standard = 1.000000; // convert input into meters
-        String[] lengthUnits = { "decimal", "m", "hex" };
+        int standard = 0; // convert input into meters
+        String[] programmingUnits = { "DEC", "BIN", "HEX" };
         EditText textbox;
         AppCompatActivity activity;
         LinearLayout colorBoard;
@@ -56,6 +58,10 @@ import static space.markwen.www.units.R.id.binaryText;
             textbox = (EditText) programmingView.findViewById(R.id.programmingEditText);
             colorBoard = (LinearLayout) programmingView.findViewById(R.id.programmingColorBoard);
 
+            decimalTextView = (TextView) programmingView.findViewById(decimalText);
+            binaryTextView = (TextView) programmingView.findViewById(binaryText);
+            hexTextView = (TextView) programmingView.findViewById(hexText);
+
             // Changing theme
             activity.getSupportActionBar().setTitle("Programming");
             activity.setTheme(R.style.ProgrammingTheme); // Theme
@@ -67,6 +73,10 @@ import static space.markwen.www.units.R.id.binaryText;
             }
 
             // Textbox handler
+            textbox.setFilters(new InputFilter[] {
+                    new InputFilter.AllCaps(),
+                    new InputFilter.LengthFilter(16)
+            }); // Make text input all cap and limit to 16 digits
             textbox.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -86,13 +96,18 @@ import static space.markwen.www.units.R.id.binaryText;
             });
 
             // Spinner handler
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, lengthUnits);
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, programmingUnits);
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner.setAdapter(adapter);
             spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 public void onItemSelected(AdapterView<?> parent, View view,
                                            int position, long id) {
-                    selectedUnit = lengthUnits[position];
+                    selectedUnit = programmingUnits[position];
+                    if (position == 2) {
+                        textbox.setInputType(InputType.TYPE_CLASS_TEXT);
+                    } else {
+                        textbox.setInputType(InputType.TYPE_CLASS_NUMBER);
+                    }
                     // Make sure values refreshes when spinner value changes
                     outputBasedOnText(textbox.getText());
                 }
@@ -109,33 +124,45 @@ import static space.markwen.www.units.R.id.binaryText;
 
         // Methods
         // Method that converts all the units and display them
-        private void convertInput(double input) {
-            decimalTextView = (TextView) programmingView.findViewById(decimalText);
-            binaryTextView = (TextView) programmingView.findViewById(binaryText);
-            hexTextView = (TextView) programmingView.findViewById(hexText);
+        private void convertInput(String input) {
 
-            if (input != 0) {
+            if (input != "0") {
                 // Set standard value in meters based on selected unit
                 switch (selectedUnit) {
-                    case "decimal":
-                        standard = input;
+                    case "DEC":
+                        try {
+                            standard = Integer.parseInt(input);
+                        } catch(Exception e) {
+                            convertInput("0");
+                            return;
+                        }
                         break;
-                    case "binary":
-                        standard = input;
+                    case "BIN":
+                        if (input.matches("[10]+")) {
+                            standard = Integer.valueOf(input, 2);
+                        } else {
+                            convertInput("0");
+                            return;
+                        }
                         break;
-                    case "hex":
-                        standard = input / 100;
+                    case "HEX":
+                        try {
+                            standard = Integer.valueOf(input, 16);
+                        } catch(Exception e) {
+                            convertInput("0");
+                            return;
+                        }
                         break;
                     default:
-                        standard = input;
+                        standard = Integer.parseInt(input);
                         break;
                 }
                 //decimal
-                decimalTextView.setText(numberFormatter(standard * 1));
+                decimalTextView.setText(numberFormatter(String.valueOf(standard), "dec"));
                 //binary
-                binaryTextView.setText(numberFormatter(standard * 1));
+                binaryTextView.setText(numberFormatter(Integer.toBinaryString(standard), "bin"));
                 //hex
-                hexTextView.setText(numberFormatter(standard * 100));
+                hexTextView.setText(numberFormatter(Integer.toHexString(standard), "hex"));
             } else {
                 //decimal
                 decimalTextView.setText("");
@@ -147,42 +174,22 @@ import static space.markwen.www.units.R.id.binaryText;
         }
 
         // Method that formats the converted numbers
-        private String numberFormatter(double input) {
-            // Formatters
-            NumberFormat sciFormatter = new DecimalFormat("0.#####E0"); // Scientific notation
-            NumberFormat commaFormatter = new DecimalFormat("###,###,###,###.###############"); // Adding comma
-
-            // If input is in scientific notation already
-            if ((String.valueOf(input)).indexOf("E") > 0) {
-                return sciFormatter.format(input); // make the scientific notation neater
+        private String numberFormatter(String input, String type) {
+            if (type == "dec") {
+                NumberFormat commaFormatter = new DecimalFormat("###,###,###,###"); // Adding comma
+                return commaFormatter.format(Integer.valueOf(input));
             }
-
-            // If input is not in scientific notation
-            // Number of digits of integer and decimal of input
-            String[] splitter = String.format("%f", input).split("\\.");
-            int intDigits = splitter[0].length();   // Before Decimal Count
-            int decDigits;// After  Decimal Count
-            if (splitter[1].equals("000000")){
-                decDigits = 0;
-            } else {
-                decDigits= splitter[1].length();
-            }
-
-            if ((intDigits + decDigits) > 9) {
-                return sciFormatter.format(input);
-            }
-            return commaFormatter.format(input);
+            return input.replaceAll("....", "$0 ").toUpperCase();
         }
 
         // Method that determines numbers that displays based on user input
         private void outputBasedOnText(Editable s) {
             String stringValue = s.toString();
-            if (stringValue.length() > 1 && stringValue.substring(stringValue.length() - 1).equals(".")) { // If the last char in string is "."
-                convertInput(Double.parseDouble(stringValue.substring(0, stringValue.length() - 1)));
-            } else if (!stringValue.matches("[-+]?\\d*\\.?\\d+")) { // Check if stringValue is numeric
-                convertInput(0);
+            // If the last char in string is "."
+            if (stringValue.matches("[A-Fa-f0-9]+")) { // Check if stringValue is alphabetic
+                convertInput(stringValue);
             } else {
-                convertInput(Double.parseDouble(stringValue));
+                convertInput("0");
             }
         }
     }

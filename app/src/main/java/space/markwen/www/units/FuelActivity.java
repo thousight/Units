@@ -23,9 +23,9 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import static space.markwen.www.units.R.id.USMPGText;
-import static space.markwen.www.units.R.id.UKMPGText;
 import static space.markwen.www.units.R.id.KmpLText;
+import static space.markwen.www.units.R.id.UKMPGText;
+import static space.markwen.www.units.R.id.USMPGText;
 
 /**
  * Created by markw on 9/20/2016.
@@ -55,6 +55,10 @@ import static space.markwen.www.units.R.id.KmpLText;
             spinner = (Spinner) fuelView.findViewById(R.id.fuelSpinner);
             textbox = (EditText) fuelView.findViewById(R.id.fuelEditText);
             colorBoard = (LinearLayout) fuelView.findViewById(R.id.fuelColorBoard);
+
+            USMPGTextView = (TextView) fuelView.findViewById(USMPGText);
+            UKMPGTextView = (TextView) fuelView.findViewById(UKMPGText);
+            KmpLTextView = (TextView) fuelView.findViewById(KmpLText);
 
             // Changing theme
             activity.getSupportActionBar().setTitle("Fuel Economy");
@@ -110,9 +114,6 @@ import static space.markwen.www.units.R.id.KmpLText;
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            USMPGTextView = (TextView) fuelView.findViewById(USMPGText);
-            UKMPGTextView = (TextView) fuelView.findViewById(UKMPGText);
-            KmpLTextView = (TextView) fuelView.findViewById(KmpLText);
 
             if (input != 0) {
                 // Set standard value in meters based on selected unit

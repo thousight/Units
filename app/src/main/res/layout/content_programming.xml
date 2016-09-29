@@ -38,7 +38,7 @@
                 <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
+                    android:inputType="number"
                     android:ems="10"
                     android:id="@+id/programmingEditText"
                     android:textSize="30sp"
@@ -90,95 +90,81 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp">
 
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:textAlignment="textEnd"
-                        android:id="@+id/decimalText"
-                        android:maxLines="1"
-                        android:maxLength="14"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:textAlignment="viewStart"
-                        android:text=" decimal"
-                        android:textSize="@dimen/font_size"
-                        tools:ignore="HardcodedText"
-                        android:textColor="@color/textColor" />
-                </LinearLayout>
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:text="Decimal"
+                    android:textSize="@dimen/font_size"
+                    tools:ignore="HardcodedText"
+                    android:textColor="@color/textColor" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:id="@+id/decimalText"
+                    android:maxLines="1"
+                    android:maxLength="14"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="viewStart" />
 
                 <!--Horizontal divider line-->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray"/>
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:textAlignment="textEnd"
-                        android:id="@+id/binaryText"
-                        android:maxLines="1"
-                        android:maxLength="14"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:textAlignment="viewStart"
-                        android:layout_weight="1"
-                        android:text=" binary"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"
-                        tools:ignore="HardcodedText" />
-                </LinearLayout>
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:text="Binary"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="@color/textColor"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:id="@+id/binaryText"
+                    android:maxLines="1"
+                    android:maxLength="20"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="viewStart" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/lightGray"/>
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:weightSum="2">
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:textAlignment="textEnd"
-                        android:id="@+id/hexText"
-                        android:maxLines="1"
-                        android:maxLength="14"
-                        android:layout_weight="1"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"/>
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="60dp"
-                        android:gravity="center"
-                        android:layout_weight="1"
-                        android:textAlignment="viewStart"
-                        android:text=" hex"
-                        android:textSize="@dimen/font_size"
-                        android:textColor="@color/textColor"
-                        tools:ignore="HardcodedText" />
-                </LinearLayout>
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart"
+                    android:text="Hexadecimal"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="@color/textColor"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:id="@+id/hexText"
+                    android:maxLines="1"
+                    android:maxLength="14"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/font_size"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="viewStart" />
 
             </LinearLayout>
         </ScrollView>

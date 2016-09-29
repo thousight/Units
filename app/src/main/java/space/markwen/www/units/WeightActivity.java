@@ -23,15 +23,15 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import static space.markwen.www.units.R.id.gText;
-import static space.markwen.www.units.R.id.ozText;
-import static space.markwen.www.units.R.id.tText;
-import static space.markwen.www.units.R.id.kgText;
-import static space.markwen.www.units.R.id.stText;
-import static space.markwen.www.units.R.id.mgText;
 import static space.markwen.www.units.R.id.LTText;
-import static space.markwen.www.units.R.id.ugText;
+import static space.markwen.www.units.R.id.gText;
+import static space.markwen.www.units.R.id.kgText;
 import static space.markwen.www.units.R.id.lbText;
+import static space.markwen.www.units.R.id.mgText;
+import static space.markwen.www.units.R.id.ozText;
+import static space.markwen.www.units.R.id.stText;
+import static space.markwen.www.units.R.id.tText;
+import static space.markwen.www.units.R.id.ugText;
 
 /**
  * Created by markw on 9/20/2016.
@@ -67,6 +67,16 @@ public class WeightActivity extends Fragment {
         spinner = (Spinner) weightView.findViewById(R.id.weightSpinner);
         textbox = (EditText) weightView.findViewById(R.id.weightEditText);
         colorBoard = (LinearLayout) weightView.findViewById(R.id.weightColorBoard);
+
+        tTextView = (TextView) weightView.findViewById(tText);
+        kgTextView = (TextView) weightView.findViewById(kgText);
+        gTextView = (TextView) weightView.findViewById(gText);
+        mgTextView = (TextView) weightView.findViewById(mgText);
+        ugTextView = (TextView) weightView.findViewById(ugText);
+        LTTextView = (TextView) weightView.findViewById(LTText);
+        stTextView = (TextView) weightView.findViewById(stText);
+        lbTextView = (TextView) weightView.findViewById(lbText);
+        ozTextView = (TextView) weightView.findViewById(ozText);
 
         // Changing theme
         activity.getSupportActionBar().setTitle("Weight");
@@ -122,15 +132,6 @@ public class WeightActivity extends Fragment {
     // Methods
     // Method that converts all the units and display them
     private void convertInput(double input) {
-        tTextView = (TextView) weightView.findViewById(tText);
-        kgTextView = (TextView) weightView.findViewById(kgText);
-        gTextView = (TextView) weightView.findViewById(gText);
-        mgTextView = (TextView) weightView.findViewById(mgText);
-        ugTextView = (TextView) weightView.findViewById(ugText);
-        LTTextView = (TextView) weightView.findViewById(LTText);
-        stTextView = (TextView) weightView.findViewById(stText);
-        lbTextView = (TextView) weightView.findViewById(lbText);
-        ozTextView = (TextView) weightView.findViewById(ozText);
 
         if (input != 0) {
             // Set standard value in meters based on selected unit

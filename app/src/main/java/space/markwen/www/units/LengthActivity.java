@@ -70,6 +70,17 @@ import static space.markwen.www.units.R.id.ydText;
             textbox = (EditText) lengthView.findViewById(R.id.lengthEditText);
             colorBoard = (LinearLayout) lengthView.findViewById(R.id.lengthColorBoard);
 
+            kmTextView = (TextView) lengthView.findViewById(kmText);
+            mTextView = (TextView) lengthView.findViewById(mText);
+            cmTextView = (TextView) lengthView.findViewById(cmText);
+            mmTextView = (TextView) lengthView.findViewById(mmText);
+            umTextView = (TextView) lengthView.findViewById(umText);
+            nmTextView = (TextView) lengthView.findViewById(nmText);
+            miTextView = (TextView) lengthView.findViewById(miText);
+            ydTextView = (TextView) lengthView.findViewById(ydText);
+            ftTextView = (TextView) lengthView.findViewById(ftText);
+            inTextView = (TextView) lengthView.findViewById(inText);
+
             // Changing theme
             activity.getSupportActionBar().setTitle("Length");
             activity.setTheme(R.style.LengthTheme); // Theme
@@ -124,16 +135,6 @@ import static space.markwen.www.units.R.id.ydText;
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            kmTextView = (TextView) lengthView.findViewById(kmText);
-            mTextView = (TextView) lengthView.findViewById(mText);
-            cmTextView = (TextView) lengthView.findViewById(cmText);
-            mmTextView = (TextView) lengthView.findViewById(mmText);
-            umTextView = (TextView) lengthView.findViewById(umText);
-            nmTextView = (TextView) lengthView.findViewById(nmText);
-            miTextView = (TextView) lengthView.findViewById(miText);
-            ydTextView = (TextView) lengthView.findViewById(ydText);
-            ftTextView = (TextView) lengthView.findViewById(ftText);
-            inTextView = (TextView) lengthView.findViewById(inText);
 
             if (input != 0) {
                 // Set standard value in meters based on selected unit

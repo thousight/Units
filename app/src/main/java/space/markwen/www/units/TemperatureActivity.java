@@ -57,6 +57,10 @@ public class TemperatureActivity extends Fragment {
         textbox = (EditText) tempView.findViewById(R.id.tempEditText);
         colorBoard = (LinearLayout) tempView.findViewById(R.id.tempColorBoard);
 
+        CTextView = (TextView) tempView.findViewById(CText);
+        FTextView = (TextView) tempView.findViewById(FText);
+        KTextView = (TextView) tempView.findViewById(KText);
+
         // Changing theme
         activity.getSupportActionBar().setTitle("Temperature");
         activity.setTheme(R.style.TempTheme); // Theme
@@ -111,9 +115,6 @@ public class TemperatureActivity extends Fragment {
     // Methods
     // Method that converts all the units and display them
     private void convertInput(double input) {
-        CTextView = (TextView) tempView.findViewById(CText);
-        FTextView = (TextView) tempView.findViewById(FText);
-        KTextView = (TextView) tempView.findViewById(KText);
 
         if (input != 0) {
             // Set standard value in meters based on selected unit

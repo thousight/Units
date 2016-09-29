@@ -60,6 +60,12 @@ import static space.markwen.www.units.R.id.mpsText;
             textbox = (EditText) speedView.findViewById(R.id.speedEditText);
             colorBoard = (LinearLayout) speedView.findViewById(R.id.speedColorBoard);
 
+            MphTextView = (TextView) speedView.findViewById(MphText);
+            FtpsTextView = (TextView) speedView.findViewById(ftpsText);
+            mpsTextView = (TextView) speedView.findViewById(mpsText);
+            kmphTextView = (TextView) speedView.findViewById(kmphText);
+            KnotTextView = (TextView) speedView.findViewById(KnotText);
+
             // Changing theme
             activity.getSupportActionBar().setTitle("Speed");
             activity.setTheme(R.style.SpeedTheme); // Theme
@@ -114,11 +120,7 @@ import static space.markwen.www.units.R.id.mpsText;
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            MphTextView = (TextView) speedView.findViewById(MphText);
-            FtpsTextView = (TextView) speedView.findViewById(ftpsText);
-            mpsTextView = (TextView) speedView.findViewById(mpsText);
-            kmphTextView = (TextView) speedView.findViewById(kmphText);
-            KnotTextView = (TextView) speedView.findViewById(KnotText);
+
             if (input != 0) {
                 // Set standard value in meters based on selected unit
                 switch (selectedUnit) {

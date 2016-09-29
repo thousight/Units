@@ -23,14 +23,14 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
+import static space.markwen.www.units.R.id.Mi2Text;
+import static space.markwen.www.units.R.id.acText;
 import static space.markwen.www.units.R.id.cm2Text;
 import static space.markwen.www.units.R.id.ft2Text;
+import static space.markwen.www.units.R.id.haText;
 import static space.markwen.www.units.R.id.in2Text;
 import static space.markwen.www.units.R.id.km2Text;
 import static space.markwen.www.units.R.id.m2Text;
-import static space.markwen.www.units.R.id.Mi2Text;
-import static space.markwen.www.units.R.id.haText;
-import static space.markwen.www.units.R.id.acText;
 import static space.markwen.www.units.R.id.yd2Text;
 
 /**
@@ -67,6 +67,16 @@ import static space.markwen.www.units.R.id.yd2Text;
             spinner = (Spinner) areaView.findViewById(R.id.areaSpinner);
             textbox = (EditText) areaView.findViewById(R.id.areaEditText);
             colorBoard = (LinearLayout) areaView.findViewById(R.id.areaColorBoard);
+
+            km2TextView = (TextView) areaView.findViewById(km2Text);
+            m2TextView = (TextView) areaView.findViewById(m2Text);
+            cm2TextView = (TextView) areaView.findViewById(cm2Text);
+            Mi2TextView = (TextView) areaView.findViewById(Mi2Text);
+            yd2TextView = (TextView) areaView.findViewById(yd2Text);
+            ft2TextView = (TextView) areaView.findViewById(ft2Text);
+            in2TextView = (TextView) areaView.findViewById(in2Text);
+            haTextView = (TextView) areaView.findViewById(haText);
+            acTextView = (TextView) areaView.findViewById(acText);
 
             // Changing theme
             activity.getSupportActionBar().setTitle("Area");
@@ -122,15 +132,6 @@ import static space.markwen.www.units.R.id.yd2Text;
         // Methods
         // Method that converts all the units and display them
         private void convertInput(double input) {
-            km2TextView = (TextView) areaView.findViewById(km2Text);
-            m2TextView = (TextView) areaView.findViewById(m2Text);
-            cm2TextView = (TextView) areaView.findViewById(cm2Text);
-            Mi2TextView = (TextView) areaView.findViewById(Mi2Text);
-            yd2TextView = (TextView) areaView.findViewById(yd2Text);
-            ft2TextView = (TextView) areaView.findViewById(ft2Text);
-            in2TextView = (TextView) areaView.findViewById(in2Text);
-            haTextView = (TextView) areaView.findViewById(haText);
-            acTextView = (TextView) areaView.findViewById(acText);
 
             if (input != 0) {
                 // Set standard value in meters based on selected unit
