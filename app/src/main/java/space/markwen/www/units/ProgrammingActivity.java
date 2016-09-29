@@ -73,10 +73,6 @@ import static space.markwen.www.units.R.id.hexText;
             }
 
             // Textbox handler
-            textbox.setFilters(new InputFilter[] {
-                    new InputFilter.AllCaps(),
-                    new InputFilter.LengthFilter(16)
-            }); // Make text input all cap and limit to 16 digits
             textbox.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -103,10 +99,25 @@ import static space.markwen.www.units.R.id.hexText;
                 public void onItemSelected(AdapterView<?> parent, View view,
                                            int position, long id) {
                     selectedUnit = programmingUnits[position];
-                    if (position == 2) {
+                    if (position == 1) {
+                        textbox.setInputType(InputType.TYPE_CLASS_NUMBER);
+                        // Make text input all cap and limit to 16 digits
+                        textbox.setFilters(new InputFilter[] {
+                                new InputFilter.AllCaps(),
+                                new InputFilter.LengthFilter(16)
+                        });
+                    }
+                    else if (position == 2) {
                         textbox.setInputType(InputType.TYPE_CLASS_TEXT);
+                        // Make text input all cap and limit to 16 digits
+                        textbox.setFilters(new InputFilter[] {
+                                new InputFilter.AllCaps(),
+                                new InputFilter.LengthFilter(16)
+                        });
                     } else {
                         textbox.setInputType(InputType.TYPE_CLASS_NUMBER);
+                        // Make text input all cap and limit to 9 digits
+                        textbox.setFilters(new InputFilter[] {new InputFilter.LengthFilter(9)});
                     }
                     // Make sure values refreshes when spinner value changes
                     outputBasedOnText(textbox.getText());
